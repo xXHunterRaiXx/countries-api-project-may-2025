@@ -26,7 +26,7 @@ Stretch goals for the project (not required for assignment completion)
 
 ## Where to find everything
 
-You will need to use this [Figma file](https://www.figma.com/design/x3WLU6YVt7W6xPegNQYkSa/Countries-App?node-id=0-1&t=vxLPNspt2PcXBl12-1) for the designs
+You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?m=auto&t=C9b6FsfUdPspzaqu-1) for the designs
 
 There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.com) and you can use an icon font library for the icons.
 
