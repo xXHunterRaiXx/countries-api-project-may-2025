@@ -43,5 +43,5 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
 
-- [GitHub Pages](https://pages.github.com/)
 - [Netlify](https://www.netlify.com/)
+- [Vercel](https://vercel.com/)
