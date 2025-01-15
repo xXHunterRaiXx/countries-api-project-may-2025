@@ -33,11 +33,13 @@ There are no assets for this challenge, as the country flags will be pulled from
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
 ## Tips for building your project
-1. Initialize your project as a public repository on [GitHub](https://github.com/). If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-3. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-4. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-5. Feel free to use a UI library like Chakra UI to help create your components.
+1. Work on one feature at a time. Finish one feature first before you move onto the next thing. As a metaphor, if we are making dinner, we should start with making each dish before we get hung up on choosing the plates and dinnerware. Otherwise we'll have a bunch of nice plates but no food on the table!
+2. Start with the most important features first, such as the Header and displaying the country data as cards. Don't bother working on less significant features (such as the filter and search features) until you've gotten the main stuff completed. 
+3. Initialize your project as a public repository on [GitHub](https://github.com/). If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
+4. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
+5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
+6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+7. Feel free to use a UI library like Chakra UI to help create your components.
 
 ## Deploying your project
 
