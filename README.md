@@ -32,7 +32,7 @@ There are no assets for this challenge, as the country flags will be pulled from
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
-## Building your project
+## Tips for building your project
 1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
 2. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
 3. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
@@ -45,3 +45,36 @@ As mentioned above, there are many ways to host your project for free. Our recom
 
 - [Netlify](https://www.netlify.com/)
 - [Vercel](https://vercel.com/)
+
+## Roadmap: Step-by-step guide to building your project
+
+### Day 1 — Project Setup, Installation, and Folder Structure
+  - Set up React project in VS Code with Vite
+  - Install React Router package
+  - Create new Github Repo
+  - Copy data.json file and [style-guide.md](http://style-guide.md) files into project folder on VS Code
+  - Push code to Github
+    
+### Day 2 — Create UI for Homepage
+  - Set up Routes in App.jsx
+  - Create Header Component
+  - Display country data from data.json file as Cards
+  - Create Card Component
+    
+### Day 3 — API calls and data
+  - Create API call
+  - Refactor country data in Cards to display data from API call, instead of displaying data from data.json
+    
+### Day 4 — Form
+  - Create the Form on Saved Countries Page
+    
+### Day 5 — Create Individual Country Page & Search Feature
+  - Create the UI for the Individual Country page
+  - Create the searchbar on the Home page
+
+### Day 6 — Finalize & Deploy project
+  - Deploy your completed project to Netlify
+
+### Stretch Goals (optional)
+  - Filter countries by region
+  - Dark Mode
