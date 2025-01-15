@@ -2,9 +2,9 @@
 
 ## Welcome! 👋
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
+Your challenge is to build a website with [React.js](https://reactjs.org) that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
 
-You should use [React](https://reactjs.org).
+You should use 
 
 Goals for Version 1 of the project:
 
