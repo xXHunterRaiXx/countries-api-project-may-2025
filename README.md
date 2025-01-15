@@ -43,10 +43,7 @@ There is also a `style-guide.md` file containing the information you'll need, su
 
 ## Deploying your project
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [Netlify](https://www.netlify.com/)
-- [Vercel](https://vercel.com/)
+When you are close to finishing your project, please deploy it to [Netlify](https://www.netlify.com/) via your Github repo. 
 
 ## Roadmap: Step-by-step guide to building your project
 
