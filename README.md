@@ -4,9 +4,9 @@
 
 Your challenge is to build a website with [React.js](https://reactjs.org) that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
 
-You should use 
+## Project Goals 
 
-Goals for Version 1 of the project:
+Required Goals for Version 1 of the project:
 
 - Mobile responsive application build with React.js/Vite
 - Code deployed to a URL through a Github repo
