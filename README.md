@@ -47,33 +47,36 @@ When you are close to finishing your project, please deploy it to [Netlify](http
 
 ## Roadmap: Step-by-step guide to building your project
 
-### Day 1 — Project Setup, Installation, and Folder Structure
+### Step 1 — Project Setup, Installation, and Folder Structure
   - Set up React project in VS Code with Vite
   - Install React Router package
   - Create new Github Repo
   - Copy data.json file and [style-guide.md](http://style-guide.md) files into project folder on VS Code
   - Push code to Github
     
-### Day 2 — Create UI for Homepage
-  - Set up Routes in App.jsx
-  - Create Header Component
-  - Display country data from data.json file as Cards
-  - Create Card Component
+### Step 2 — Set up Header and Routes
+  - Set up Routes for each page (Home page and Saved Countries page) in App.jsx
+  - Set up file for Home Page
+  - Set up file for Saved Countries Page
+  - Create Header component
+
+### Step 3 — Create UI for Homepage
+  - Display country data from the data.json file on HomePage
+  - Create CountryCard component
     
-### Day 3 — API calls and data
+### Step 4 — API calls and data
   - Create API call
   - Refactor country data in Cards to display data from API call, instead of displaying data from data.json
     
-### Day 4 — Form
+### Step 5 — Form
   - Create the Form on Saved Countries Page
-    
-### Day 5 — Create Individual Country Page & Search Feature
-  - Create the UI for the Individual Country page
-  - Create the searchbar on the Home page
 
-### Day 6 — Finalize & Deploy project
+### Step 6 — Finalize & Deploy project
   - Deploy your completed project to Netlify
 
 ### Stretch Goals (optional)
+  - Create the searchbar on the Home page
   - Filter countries by region
   - Dark Mode
+  - Create the Individual Country page
+ 
