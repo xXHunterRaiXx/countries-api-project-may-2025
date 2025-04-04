@@ -40,10 +40,11 @@ Stretch goals for the project (not required for assignment completion)
 
 ### Step 1: Project Setup
   1. Fork this Github repo into your own Github account, then clone your new Github repo into your local machine. You can use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
-  3. In the terminal, use `cd` to navigate to your new local repo until you get to the `version-1` folder. This `version-1` folder is where you will code your Countries API project!   
-  4. In the terminal, inside the `version-1` folder, create a new React project with Vite
-  5. In the terminal, inside the `version-1` folder, install React Router package using `npm install react-router`
-  6. Push code to Github
+  3. In the terminal, use `cd` to navigate to your new local repo called countries-api-project.
+  4. In the terminal, inside your countries-api-project repo,  create a `version-1` folder. You can do this by running the command `mkdir version-1`. This `version-1` folder is where you will code your Countries API project!   
+  5. In the terminal, `cd` into the `version-1` folder, and then create a new React project with [Vite](https://vite.dev/)
+  6. In the terminal, inside the `version-1` folder, install [React Router](https://reactrouter.com/home) package using `npm install react-router`
+  7. Push code to Github
     
 ### Step 2: Set up Routes with `react-router`
   1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
