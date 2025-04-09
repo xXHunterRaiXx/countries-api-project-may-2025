@@ -19,8 +19,7 @@ Stretch goals for the project (not required for assignment completion)
 - As a user, I can search for a country using an `input` field
 - As a user, I can filter countries by region
 - As a user, I can toggle the color scheme between light and dark mode
-- As a user, I can add a country to my Saved Countries list (note: we will work on this during a later version of the project)
-- As a user, I can click through to the border countries on the detail page
+- As a user, I can click through to the bordering countries on the detail page
 
 **NOTE: Sometimes the REST Countries API can go down. We've added a `data.json` file with all the country data. You should use this as a backup, if the API responds with an error.**
 
