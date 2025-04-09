@@ -50,25 +50,26 @@ Stretch goals for the project (not required for assignment completion)
   4. In the `src` folder, create a `pages` folder and set up page components for each page (Home page, SavedCountries page, Country page)
   5. Don't forget to push your code to Github!
 
-### Step 3: Create Header
-  1. Create the Header component, which will be displayed on each page. 
-  2. Style the Header component
-  3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page.
-
-### Step 4: Display Country Data on the Home page from data.json file
+### Step 3: Display Country Data on the Home page from data.json file
   1. On the Home page, display country data from the data.json file
   2. Style the country data according to the Figma designs 
   3. Don't forget to push your code to Github!
 
-### Step 5: Create API Call to REST Countries API
+### Step 4: Create API Call to REST Countries API
   1. On the Home page, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
   2. Display data from API call on the Home page, instead of displaying data from data.json
+
+### Step 5: Create Header
+  1. Create the Header component, which will be displayed on each page. 
+  2. Style the Header component
+  3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page.
     
 ### Step 6: Create the Form
-  1. Create the Form on Saved Countries Page, so that the user can submit their information
-  2. Style the Form according to the designs
+  1. Create the Saved Countries Page
+  2. On the Saved Countries page, create the Form so that the user can submit their profile information
+  3. Style the Form according to the designs
 
-### Step 7: Create the Country page
+### Step 7: Create the Country Detail page
   1. We will create this page together as a class, so you do not need to create this page until the time comes. 
 
 ### Step 8: Deploy project to Netlify
