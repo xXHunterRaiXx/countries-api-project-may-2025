@@ -14,8 +14,8 @@ Throughout the Backend course, you will build a full-stack web application that 
 
 | Version | Feature | Data storage | 
 | ------- | ---------- | ---- |
-| 0 | Frontend UI only | No data stored |
-| 1 | Frontend UI only | No data stored |
+| 0 | Frontend UI only of Home page | No data stored |
+| 1 | Frontend UI only of Home page, SavedCountries page, CountryDetail page| No data stored |
 | 2 | Local Storage | Data is stored locally in the browser |
 | 3 | Supabase | Data is stored remotely in the Supabase database. I have no control over the data communication. |
 | 4 | Local Postgres Database with API layer + Node.js | Data is stored, and I am responsible for how it is called and received (or placed) in the database. I control and have built all aspects of the data communication and the data storage in the database. |
