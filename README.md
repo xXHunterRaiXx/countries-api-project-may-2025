@@ -4,6 +4,8 @@
 
 Throughout the Backend course, you will build a full-stack web application that displays information about countries around the world.
 
+![image](https://github.com/user-attachments/assets/33b74a77-21ae-4e00-bac0-9638f70890d4)
+
 ## 🔗 Resources
 
 - **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?m=auto&t=C9b6FsfUdPspzaqu-1) for the designs
@@ -11,6 +13,8 @@ Throughout the Backend course, you will build a full-stack web application that 
 - **Documentation Guides:** The teaching team at AnnieCannons has provided some [handy guides](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.0#heading=h.ykdbmvmlp0ag) to help you use Github and other coding tools
 
 ## 🚀 The Arc of this project
+
+You will build multiple iterations of this project, where each version lives in a separate folder in the project repo. You'll start out by building Version 0, which is just the Frontend UI of the Home page. You'll end the course having build Version 5, which is a full-stack web application where you have built everything yourself: the frontend with React, the API with Express and Node.js, and the database with PostgreSQL. 
 
 | Version | Feature | Data storage | 
 | ------- | ---------- | ---- |
@@ -20,3 +24,4 @@ Throughout the Backend course, you will build a full-stack web application that 
 | 3 | Supabase | Data is stored remotely in the Supabase database. I have no control over the data communication. |
 | 4 | Local Postgres Database with API layer + Node.js | Data is stored, and I am responsible for how it is called and received (or placed) in the database. I control and have built all aspects of the data communication and the data storage in the database. |
 | 5 | Remote Postgres Database with API layer + Node.js | I have deployed my database to a remote server! |
+
