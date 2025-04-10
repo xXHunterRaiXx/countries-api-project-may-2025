@@ -2,7 +2,7 @@
 
 ## 👋 Welcome!
 
-Your challenge is to build a website with [React.js](https://reactjs.org) that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
+Your challenge is to build a website with React.js that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
 
 ## 🎯 Project Goals
 
