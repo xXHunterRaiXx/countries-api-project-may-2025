@@ -31,25 +31,23 @@ Your challenge is to build a website with React.js that pulls country data from 
 ### Step 1: Project Setup
 
 1. Fork this Github repo into your own Github account, then clone your new Github repo into your local machine. You can use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
-2. In the terminal, use `cd` to navigate to your new local repo called countries-api-project.
-3. In the terminal, inside your countries-api-project repo, create a `version-1` folder. You can do this by running the command `mkdir version-1`. This `version-1` folder is where you will code your Countries API project!
-4. In the terminal, `cd` into the `version-1` folder, and then create a new React project with [Vite](https://vite.dev/)
-5. In the terminal, inside the `version-1` folder, install [React Router](https://reactrouter.com/home) package using `npm install react-router`
-6. Push your code to Github!
+2. In the terminal, use `cd` to navigate to your new local repo called countries-api-project-may-2025.
+3. In the terminal, `cd` into the `version-0` folder, and then create a new React project with [Vite](https://vite.dev/)
+4. Push your code to Github!
 
-### Step 3: Display Country Data from `data.json` file
+### Step 2: Display Country Data from `data.json` file
 
 1. In App.jsx, display country data from the `data.json` file
 2. Style the country data according to the Figma designs
 3. Don't forget to push your code to Github!
 
-### Step 4: Create API Call to REST Countries API
+### Step 3: Create API Call to REST Countries API
 
 1. In App.jsx, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
 2. Display countries data from API call on the Home page, instead of displaying data from `data.json`
 3. Push your code to Github!
 
-### Step 5: Create Header
+### Step 4: Create Header
 
 1. Create the Header component, which will be displayed on each page.
 2. Style the Header component
