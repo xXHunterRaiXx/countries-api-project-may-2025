@@ -39,45 +39,19 @@ Stretch goals for the project (not required for assignment completion)
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
 
-### Step 1: Project Setup
-
-1. Fork this Github repo into your own Github account, then clone your new Github repo into your local machine. You can use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
-2. In the terminal, use `cd` to navigate to your new local repo called countries-api-project.
-3. In the terminal, inside your countries-api-project repo, create a `version-1` folder. You can do this by running the command `mkdir version-1`. This `version-1` folder is where you will code your Countries API project!
-4. In the terminal, `cd` into the `version-1` folder, and then create a new React project with [Vite](https://vite.dev/)
-5. In the terminal, inside the `version-1` folder, install [React Router](https://reactrouter.com/home) package using `npm install react-router`
-6. Push code to Github
-
-### Step 2: Set up Routes with `react-router`
+### Step 1: Set up Routes with `react-router`
 
 1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
 2. In the `src` folder, create a `pages` folder and set up page components for each page (Home page, SavedCountries page, Country page)
 3. Don't forget to push your code to Github!
 
-### Step 3: Display Country Data on the Home page from data.json file
-
-1. On the Home page, display country data from the data.json file
-2. Style the country data according to the Figma designs
-3. Don't forget to push your code to Github!
-
-### Step 4: Create API Call to REST Countries API
-
-1. On the Home page, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
-2. Display data from API call on the Home page, instead of displaying data from data.json
-
-### Step 5: Create Header
-
-1. Create the Header component, which will be displayed on each page.
-2. Style the Header component
-3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page.
-
-### Step 6: Create the Form
+### Step 2: Create the Saved Countries Page and Form
 
 1. Create the Saved Countries Page
 2. On the Saved Countries page, create the Form so that the user can submit their profile information
 3. Style the Form according to the designs
 
-### Step 7: Create the Country Detail page
+### Step 3: Create the Country Detail page
 
 1. We will create this page together as a class, so you do not need to create this page until the time comes.
 

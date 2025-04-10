@@ -38,12 +38,6 @@ Required Goals for Version 0 of the project:
 5. In the terminal, inside the `version-1` folder, install [React Router](https://reactrouter.com/home) package using `npm install react-router`
 6. Push your code to Github!
 
-### Step 2: Set up Routes with `react-router`
-
-1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
-2. In the `src` folder, create a `pages` folder and set up page components for each page (Home page, SavedCountries page, Country page)
-3. Don't forget to push your code to Github!
-
 ### Step 3: Display Country Data on the Home page from data.json file
 
 1. On the Home page, display country data from the data.json file
