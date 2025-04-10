@@ -39,6 +39,8 @@ Stretch goals for the project (not required for assignment completion)
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
 
+Make sure you've finished Version 0 before moving on with the following steps.
+
 ### Step 1: Set up Routes with `react-router`
 
 1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
