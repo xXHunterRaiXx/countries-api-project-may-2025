@@ -26,7 +26,7 @@ Stretch goals for the project (not required for assignment completion)
 
 ## 🔗 Resources
 
-- **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?m=auto&t=C9b6FsfUdPspzaqu-1) for the designs
+- **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=0-1&p=f&t=LBwKTPOdxkR1yGCi-0) for the designs
 - **Style Guide:** Refer to the `style-guide.md` file for info about the color palette, fonts, and design.
 - **API:** You will use the [REST Countries API](https://restcountries.com) to get the country data and flag images
 
