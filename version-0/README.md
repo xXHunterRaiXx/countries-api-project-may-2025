@@ -34,24 +34,23 @@ Your challenge is to build a website with React.js that pulls country data from 
 5. In the terminal, inside the `version-1` folder, install [React Router](https://reactrouter.com/home) package using `npm install react-router`
 6. Push your code to Github!
 
-### Step 3: Display Country Data on the Home page from data.json file
+### Step 3: Display Country Data from `data.json` file
 
-1. On the Home page, display country data from the data.json file
+1. In App.jsx, display country data from the `data.json` file
 2. Style the country data according to the Figma designs
 3. Don't forget to push your code to Github!
 
 ### Step 4: Create API Call to REST Countries API
 
-1. On the Home page, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
-2. Display data from API call on the Home page, instead of displaying data from data.json
+1. In App.jsx, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
+2. Display countries data from API call on the Home page, instead of displaying data from `data.json`
 3. Push your code to Github!
 
 ### Step 5: Create Header
 
 1. Create the Header component, which will be displayed on each page.
 2. Style the Header component
-3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page.
-4. Push your code to Github!
+3. Push your code to Github!
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
