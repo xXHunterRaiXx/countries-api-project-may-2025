@@ -32,10 +32,9 @@ Stretch goals for the project (not required for assignment completion)
 
 ## 📝 Tips for building your project
 
-1. Work on one feature at a time. Finish one feature first before you move onto the next thing. As a metaphor, if we are making dinner, we should start with making each dish before we get hung up on choosing the plates and dinnerware. Otherwise we'll have a bunch of nice plates but no food on the table!
-2. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-3. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-4. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+1. **Pseudo-code before you write any code!** Look through the designs to plan out how you'll tackle the project. Write down your plan somewhere in this README or in your code.
+2. **Work on one feature at a time.** Finish one feature first before you move onto the next thing. Test as you go, routinely checking your site in the browser and making sure there are no errors before moving on. 
+3. **Write comments throughout your code as a favor for future you!** You will be building on top of this project over the course of 3 months. Future you will have to come back and re-read all of the code you are going to write. Help future you understand your code by writing comments to explain what each line of code is doing. 
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
 
