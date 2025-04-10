@@ -10,7 +10,7 @@ Required Goals for Version 1 of the project:
 
 - Mobile responsive application build with React.js/Vite
 - Code on Github and deployed to a Netlify URL
-- Countries data is pulled from the [REST Countries API](https://restcountries.com)
+- Countries data is pulled from the [REST Countries API](https://restcountries.com), or from `data.json` file when the API is down
 - As a user, I can see all countries from the API on the homepage, with data displayed about each country
 - As a user, I can submit a form with my profile information
 - As a user, I can click on a country to see more detailed information on a separate page
