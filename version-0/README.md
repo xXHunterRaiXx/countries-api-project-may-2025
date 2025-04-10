@@ -4,7 +4,7 @@
 
 Your challenge is to build a website with React.js that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
 
-## 🎯 Project Goals for Version 0
+## 🎯 Requirements for Version 0
 
 - Mobile responsive application build with React.js/Vite
 - Countries data is pulled from the [REST Countries API](https://restcountries.com), or from `data.json` file when the API is down
