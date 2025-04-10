@@ -4,9 +4,7 @@
 
 Your challenge is to build a website with React.js that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
 
-## 🎯 Project Goals
-
-Required Goals for Version 1 of the project:
+## 🎯 Requirements for Version 1
 
 - Mobile responsive application build with React.js/Vite
 - Code on Github and deployed to a Netlify URL
@@ -21,8 +19,6 @@ Stretch goals for the project (not required for assignment completion)
 - As a user, I can filter countries by region
 - As a user, I can toggle the color scheme between light and dark mode
 - As a user, I can click through to the bordering countries on the detail page
-
-**NOTE: Sometimes the REST Countries API can go down. We've added a `data.json` file with all the country data. You should use this as a backup, if the API responds with an error.**
 
 ## 🔗 Resources
 
