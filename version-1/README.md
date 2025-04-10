@@ -9,9 +9,9 @@ Your challenge is to build a website with React.js that pulls country data from 
 - Mobile responsive application build with React.js/Vite
 - Code on Github and deployed to a Netlify URL
 - Countries data is pulled from the [REST Countries API](https://restcountries.com), or from `data.json` file when the API is down
-- As a user, I can see all countries from the API on the homepage, with data displayed about each country
-- As a user, I can submit a form with my profile information
-- As a user, I can click on a country to see more detailed information on a separate page
+- As a user, I can see all countries on the Home page, with data displayed about each country
+- As a user, I can submit a form with my profile information on the Saved Countries page 
+- As a user, I can click on a country to see more detailed information on a separate page 
 
 Stretch goals for the project (not required for assignment completion)
 
@@ -19,8 +19,6 @@ Stretch goals for the project (not required for assignment completion)
 - As a user, I can filter countries by region
 - As a user, I can toggle the color scheme between light and dark mode
 - As a user, I can click through to the bordering countries on the detail page
-
-![image](https://github.com/user-attachments/assets/9c36e7fb-1a40-47f9-9426-661387ed5b5c)
 
 
 ## 🔗 Resources
@@ -41,8 +39,8 @@ Make sure you've finished Version 0 before moving on with the following steps.
 
 ### Step 1: Set up Routes with `react-router`
 
-1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
-2. In the `src` folder, create a `pages` folder and set up page components for each page (Home page, SavedCountries page, Country page)
+1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, CountryDetail page) using `react-router`. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you get started
+2. In the `src` folder, create a `pages` folder and set up a folder for each page (Home page, SavedCountries page, CountryDetail page)
 3. Update the Header component, so that clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. You will need to use the Link component provided by the `react-router` library. 
 4. Don't forget to push your code to Github!
 
