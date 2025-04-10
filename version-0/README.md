@@ -10,6 +10,9 @@ Your challenge is to build a website with React.js that pulls country data from 
 - Countries data is pulled from the [REST Countries API](https://restcountries.com), or from `data.json` file when the API is down
 - As a user, I can see all countries from the API on the homepage, with data displayed about each country
 
+![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
+
+
 ## 🔗 Resources
 
 - **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1045-2&p=f&t=T2oSD2lU7TuxaG13-0) for the designs
