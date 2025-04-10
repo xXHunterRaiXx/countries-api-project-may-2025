@@ -40,7 +40,8 @@ Make sure you've finished Version 0 before moving on with the following steps.
 
 1. In App.jsx file, set up Routes for each page (Home page, SavedCountries page, Country page) using react-router. You can use this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you
 2. In the `src` folder, create a `pages` folder and set up page components for each page (Home page, SavedCountries page, Country page)
-3. Don't forget to push your code to Github!
+3. Update the Header component, so that clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. You will need to use the Link component provided by the `react-router` library. 
+4. Don't forget to push your code to Github!
 
 ### Step 2: Create the Saved Countries Page and Form
 
