@@ -20,6 +20,9 @@ Stretch goals for the project (not required for assignment completion)
 - As a user, I can toggle the color scheme between light and dark mode
 - As a user, I can click through to the bordering countries on the detail page
 
+![image](https://github.com/user-attachments/assets/9c36e7fb-1a40-47f9-9426-661387ed5b5c)
+
+
 ## 🔗 Resources
 
 - **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=0-1&p=f&t=LBwKTPOdxkR1yGCi-0) for the designs
