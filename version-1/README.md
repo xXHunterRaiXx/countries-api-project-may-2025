@@ -46,8 +46,8 @@ Make sure you've finished Version 0 before moving on with the following steps.
 
 ### Step 2: Create the Saved Countries Page and Form
 
-1. Create the Saved Countries Page
-2. On the Saved Countries page, create the Form so that the user can submit their profile information
+1. Create the JSX file for the Saved Countries Page called SavedCountries.jsx
+2. In SavedCountries.jsx, create the Form so that the user can submit their profile information
 3. Style the Form according to the designs
 
 ### Step 3: Create the Country Detail page
