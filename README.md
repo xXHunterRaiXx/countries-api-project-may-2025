@@ -2,7 +2,7 @@
 
 ## 👋 Welcome!
 
-Throughout the Backend course, you will build a website with [React.js](https://reactjs.org) that displays information about countries around the world.
+Throughout the Backend course, you will build a full-stack web application that displays information about countries around the world.
 
 ## 🔗 Resources
 
