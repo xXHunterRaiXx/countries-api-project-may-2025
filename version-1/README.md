@@ -45,17 +45,20 @@ Make sure you've finished Version 0 before moving on with the following steps.
 4. Update the Header component, so that clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. You will need to use the Link component provided by the `react-router` library. 
 5. Don't forget to push your code to Github!
 
-### Step 2: Create the Saved Countries Page and Form
+### Step 2: Create the Home Page
+1. In Version 0, you wrote all your code in the App.jsx file. Now that you've set up `react-router`, the code you wrote in the App.jsx file should be moved to the Home.jsx file instead, because that code is for the Home page. 
+
+### Step 3: Create the SavedCountries Page and Form
 
 1. Create the JSX file for the Saved Countries Page called SavedCountries.jsx
 2. In SavedCountries.jsx, create the Form so that the user can submit their profile information
 3. Style the Form according to the designs
 
-### Step 3: Create the Country Detail page
+### Step 4: Create the CountryDetail page
 
 1. We will create this page together as a class, so you do not need to create this page until the time comes.
 
-### Step 8: Deploy project to Netlify
+### Step 5: Deploy project to Netlify
 
 1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this documentation to help you do this](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz)
 
