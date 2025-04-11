@@ -33,7 +33,7 @@ Your challenge is to build a website with React.js that pulls country data from 
 2. Clone your new Github repo into the `dev` folder on your local machine. 
 
 ### Create a new React project with Vite 
-1. In the terminal, use `cd` to navigate into the `version-0` folder.
+1. In the terminal, navigate into your repo and then into the `version-0` folder
 2. In the `version-0` folder, create a new React project with [Vite](https://vite.dev/). Use this [How to create a new project with Vite guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.rxwa6murqe1y#heading=h.wvxq6966uco7) to help you. 
 3. Push your code to Github!
 
@@ -45,7 +45,13 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 4. In the `pages` folder, set up components for each page by making these 3 files: Home.jsx, SavedCountries.jsx, and CountryInfo.jsx  
 5. Don't forget to push your code to Github!
 
-### In the Home page, display localData from `localData.json` file
+### Create Header
+1. Create the Header component, which will be displayed on the Home page.
+2. In App.css, style the Header component with CSS
+3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. Use the Link component provided by the `react-router` library to make this happen. Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you. 
+4. Push your code to Github!
+
+### In the Home page, display localData from `localData.js` file
 1. In Home.jsx, import the `localData.js` file. This file contains all of the data about each country as an array of objects.  
 2. In Home.jsx, display all of the data about each country.
    
@@ -56,20 +62,14 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 3. In App.css, style the country data according to the Figma designs
 4. Don't forget to push your code to Github!
 
-### Create Header
-1. Create the Header component, which will be displayed on the Home page.
-2. In App.css, style the Header component with CSS
-3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. Use the Link component provided by the `react-router` library to make this happen. Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you. 
-4. Push your code to Github!
-
 ### Final Steps
-1. Write comments throughout your code as a favor for future you! You will be building on top of this project over the course of 3 months. Future you will have to re-read and refactor all of the code you wrote in the past. Help future you understand your code by writing comments to explain what the code is doing.
-2. Submit the link to your Github repo to Canvas! Even if you don't finish your Version 0 before the Backend class starts, please submit your link so that your instructor can see what you have done so far.
-3. On Day 1 of the Backend class, you’ll present your progress!  Even if it’s not fully complete, don’t worry — we’re excited to see what you’ve built and hear you explain your approach! 💪
-
+1. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+2. Submit the link to your Github repo to Canvas! Whether or not your Version 0 is complete, your instructor needs to see what you have done so far during the 2-week break.
+3. Be ready to demo what you've got on Day 1 of Backend — complete or not. We just want to see your thinking and progress! 💡 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
 Finished all the steps above? Amazing!   
-Here is your next-level challenge to tackle:
-1. Create the Form on the SavedCountries page, so the user can submit their profile information. [Here is the Figma design for the Form](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1-329&t=eKfO5eJcdQC03CrI-4).
+Keep leveling up by tackling this next challenge:
+- 🧾 Creating the form on the SavedCountries page  
+  [Figma Design for the Form](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1-329&t=eKfO5eJcdQC03CrI-4)
