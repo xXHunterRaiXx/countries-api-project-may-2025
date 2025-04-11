@@ -53,7 +53,11 @@ Make sure you've finished Version 0 before moving on with the following steps.
 2. Style the Form according to the designs
 
 ### Create the CountryInfo page
-1. We will create this page together as a class, so you do not need to create this page until the time comes.
+1. Create the Country Info page and and style it according to the designs. 
+
+### Clean and Comment your code 
+1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
+2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
 
 ### Deploy project to Netlify
 1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this guide to help you](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz).
@@ -61,6 +65,7 @@ Make sure you've finished Version 0 before moving on with the following steps.
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
 Finished all the above steps? Fantastic! 
+
 Here are a few next-level challenges to tackle:
 1. Create the search bar on the Home page
 2. Filter countries by region on the Home page
