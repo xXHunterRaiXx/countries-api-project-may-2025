@@ -67,5 +67,7 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
-Finished all the steps above? Amazing!  
-Check out the instructions for Version 1 to tackle your next challenge! 
+
+Finished all the steps above? Amazing!   
+Here is your next-level challenge to tackle:
+1. Create the Form on the SavedCountries page, so the user can submit their profile information. [Here is the Figma design for the Form](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1-329&t=eKfO5eJcdQC03CrI-4).
