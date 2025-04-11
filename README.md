@@ -18,7 +18,7 @@ You will build multiple iterations of this project, where each version lives in 
 
 You'll start out by building Version 0, which is just the Frontend UI of the Home page. 
 
-You'll end the course having build Version 5, which is a full-stack web application where you have built everything yourself: the frontend with React, the API with Express and Node.js, and the database with PostgreSQL. 
+You'll end the course having built Version 5, which is a full-stack web application where you have built every layer yourself: the frontend with React, the API with Express and Node.js, and the database with PostgreSQL. 
 
 | Version | Feature | Where data is stored | 
 | ------- | ---------- | ---- |
