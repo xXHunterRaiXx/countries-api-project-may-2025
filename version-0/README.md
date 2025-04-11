@@ -28,26 +28,44 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
 
-### Step 1: Project Setup
+### Fork & Clone the Github repo 
+1. Fork this Github repo into your own account. Use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
+2. Clone your new Github repo into the `dev` folder on your local machine. 
 
-1. Fork this Github repo into your own Github account, then clone your new Github repo into your local machine. You can use this [fork and clone guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.55gk3qetux2a#heading=h.wbbot8ebr58a) to help you.
-2. In the terminal, use `cd` to navigate to your new local repo called countries-api-project-may-2025.
-3. In the terminal, `cd` into the `version-0` folder, and then create a new React project with [Vite](https://vite.dev/)
-4. Push your code to Github!
+### Create a new React project with Vite 
+1. In the terminal, use `cd` to navigate into the `version-0` folder.
+2. In the `version-0` folder, create a new React project with [Vite](https://vite.dev/). Use this [How to create a new project with Vite guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.rxwa6murqe1y#heading=h.wvxq6966uco7) to help you. 
+3. Push your code to Github!
 
-### Step 2: Display Country Data from `data.json` file
+### Set up Routes with `react-router`
+Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) as you do the following steps:
+1. In the terminal, in your `version-0` folder, install the `react-router` package using the command `npm install react-router`. 
+2. In App.jsx file, set up Routes for 3 pages: Home page, SavedCountries page, and CountryInfo page. 
+3. In the `src` folder, create a `pages` folder
+4. In the `pages` folder, set up components for each page by making these 3 files: Home.jsx, SavedCountries.jsx, and CountryInfo.jsx  
+5. Don't forget to push your code to Github!
 
-1. In App.jsx, import the `countriesData.js` file. This file contains all of the data about each country.  
-2. In App.jsx, display the country data from the `countriesData.js` 
+### In the Home page, display localData from `localData.json` file
+1. In Home.jsx, import the `localData.js` file. This file contains all of the data about each country as an array of objects.  
+2. In Home.jsx, display all of the data about each country. 
+    💡 **Tip:** Create reusable components:
+        - `CountryCard` – displays data for a single country
+        - `CountryCardList` – maps over the array of countries and renders a list of `CountryCard` components
+
 3. In App.css, style the country data according to the Figma designs
 4. Don't forget to push your code to Github!
 
-### Step 3: Create Header
-
-1. Create the Header component, which will be displayed on the Home page. 
+### Create Header
+1. Create the Header component, which will be displayed on the Home page.
 2. In App.css, style the Header component with CSS
-3. Push your code to Github!
+3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. Use the Link component provided by the `react-router` library to make this happen. Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you. 
+4. Push your code to Github!
+
+### Final Steps
+1. Submit the link to your Github repo to Canvas! Even if you don't finish your Version 0 before the Backend class starts, please submit your link so that your instructor can see what you have done so far.
+2. On Day 1 of the Backend class, you’ll present your progress!  Even if it’s not fully complete, don’t worry — we’re excited to see what you’ve built and hear you explain your approach! 💪
+
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
-
-1. Once you've completed Version 0, check out the instructions for Version 1 to keep building your app!
+Finished all the steps above? Amazing!  
+Check out the instructions for Version 1 to tackle your next challenge! 
