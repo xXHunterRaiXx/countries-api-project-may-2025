@@ -6,7 +6,7 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 ## 🎯 Requirements for Version 0
 
-- Mobile responsive application build with React.js/Vite
+- Mobile responsive application built with React.js and Vite
 - Countries data is pulled from the [REST Countries API](https://restcountries.com), or from `data.json` file when the API is down
 - As a user, I can see all countries from the API on the homepage, with data displayed about each country
 
