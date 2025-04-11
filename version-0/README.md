@@ -23,7 +23,8 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 1. **Pseudo-code before you write any code!** Look through the designs to plan out how you'll tackle the project. Write down your plan somewhere in this README or in your code.
 2. **Work on one feature at a time.** Finish one feature first before you move onto the next thing. Test as you go, routinely checking your site in the browser and making sure there are no errors before moving on. 
-3. **Write comments throughout your code as a favor for future you!** You will be building on top of this project over the course of 3 months. Future you will have to come back and re-read all of the code you are going to write. Help future you understand your code by writing comments to explain what each line of code is doing. 
+3. **Comment your code generously — Future You will thank you.** You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+4. **Clean up your code as you go**. Rename confusing variables, remove unused code, and organize your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
 
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
@@ -63,9 +64,10 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 4. Don't forget to push your code to Github!
 
 ### Final Steps
-1. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
-2. Submit the link to your Github repo to Canvas! Whether or not your Version 0 is complete, your instructor needs to see your progress by the end of the 2-week break.
-3. Be ready to demo what you've got on Day 1 of Backend — complete or not. We just want to see your thinking and progress! 💡 
+1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
+2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+3. Submit the link to your Github repo to Canvas. Whether or not your Version 0 is complete, your instructor needs to see your progress. 
+4. Be ready to demo what you've got on Day 1 of Backend — complete or not. We just want to see your thinking and progress! 💡 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
