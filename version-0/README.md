@@ -37,12 +37,12 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 ### Step 2: Display Country Data from `data.json` file
 
-1. In App.jsx, import the `data.json` file. This file contains all of the data about each country.  
-2. In App.jsx, display the country data from the `data.json file 
+1. In App.jsx, import the `countriesData.js` file. This file contains all of the data about each country.  
+2. In App.jsx, display the country data from the `countriesData.js` 
 3. In App.css, style the country data according to the Figma designs
 4. Don't forget to push your code to Github!
 
-### Step 4: Create Header
+### Step 3: Create Header
 
 1. Create the Header component, which will be displayed on the Home page. 
 2. In App.css, style the Header component with CSS
