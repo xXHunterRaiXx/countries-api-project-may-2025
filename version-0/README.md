@@ -8,10 +8,11 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 In Version 0, you'll build a mobile-responsive React app that:
 
-- ✅ Displays country data from the `localData.js` file
-- 🏠 Shows all countries on the Home page using a reusable CountryCard components
-- 📦 Is styled according to provided Figma designs
-- 🧭 Uses `react-router` to navigate between pages
+- Displays country data from the `localData.js` file
+- Shows all countries on the Home page using a reusable CountryCard component
+- Is styled according to provided Figma designs
+- Uses `react-router` to navigate between pages
+- Includes: Home, SavedCountries, and CountryInfo pages
 
 ![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
 
