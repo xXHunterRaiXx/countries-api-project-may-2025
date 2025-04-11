@@ -47,7 +47,8 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 ### In the Home page, display localData from `localData.json` file
 1. In Home.jsx, import the `localData.js` file. This file contains all of the data about each country as an array of objects.  
-2. In Home.jsx, display all of the data about each country. 
+2. In Home.jsx, display all of the data about each country.
+   
     💡 **Tip:** Create reusable components:
         - `CountryCard` – displays data for a single country
         - `CountryCardList` – maps over the array of countries and renders a list of `CountryCard` components
