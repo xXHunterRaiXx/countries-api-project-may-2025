@@ -34,37 +34,29 @@ Stretch goals for the project (not required for assignment completion)
 3. **Write comments throughout your code as a favor for future you!** You will be building on top of this project over the course of 3 months. Future you will have to come back and re-read all of the code you are going to write. Help future you understand your code by writing comments to explain what each line of code is doing. 
 
 ## 🚀 Roadmap: Step-by-step guide to building your project
-
 Make sure you've finished Version 0 before moving on with the following steps.
 
-### Step 1: 
-
-### Step 3: Create API Call to REST Countries API
-
+### Create API Call to REST Countries API
 1. In App.jsx, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
 2. Display countries data from API call on the Home page, instead of displaying data from `data.json`
 3. Push your code to Github!
 
-### Step 2: Create the Home Page
-1. In Version 0, you wrote all your code in the App.jsx file. Now that you've set up `react-router`, the code you wrote in the App.jsx file should be moved to the Home.jsx file instead, because that code is for the Home page. 
+### Build the SavedCountries Page
+1. In SavedCountries.jsx, create the Form so that the user can submit their profile information
+2. Style the Form according to the designs
 
-### Step 3: Create the SavedCountries Page and Form
-
-1. Create the JSX file for the Saved Countries Page called SavedCountries.jsx
-2. In SavedCountries.jsx, create the Form so that the user can submit their profile information
-3. Style the Form according to the designs
-
-### Step 4: Create the CountryDetail page
-
+### Create the CountryInfo page
 1. We will create this page together as a class, so you do not need to create this page until the time comes.
 
-### Step 5: Deploy project to Netlify
-
-1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this documentation to help you do this](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz)
+### Deploy project to Netlify
+1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this guide to help you](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz).
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
+Finished all the above steps? Fantastic! 
+Here are a few next-level challenges to tackle:
 1. Create the search bar on the Home page
 2. Filter countries by region on the Home page
 3. Bordering countries on Country Detail page
 4. Light & Dark Mode
+You can find the [designs for all of these Stretch Goals in the Figma file.](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1032-2&p=f&t=63CpCVNtkWIFmrAK-0) 
