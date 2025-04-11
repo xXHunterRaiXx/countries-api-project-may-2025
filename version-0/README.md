@@ -64,7 +64,7 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 ### Final Steps
 1. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
-2. Submit the link to your Github repo to Canvas! Whether or not your Version 0 is complete, your instructor needs to see what you have done so far during the 2-week break.
+2. Submit the link to your Github repo to Canvas! Whether or not your Version 0 is complete, your instructor needs to see your progress by the end of the 2-week break.
 3. Be ready to demo what you've got on Day 1 of Backend — complete or not. We just want to see your thinking and progress! 💡 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
