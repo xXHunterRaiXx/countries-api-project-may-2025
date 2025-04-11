@@ -37,16 +37,10 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 ### Step 2: Display Country Data from `data.json` file
 
-1. In App.jsx, import the `data.json` file
+1. In App.jsx, import the `data.json` file. This file contains all of the data about each country.  
 2. In App.jsx, display the country data from the `data.json file 
 3. In App.css, style the country data according to the Figma designs
 4. Don't forget to push your code to Github!
-
-### Step 3: Create API Call to REST Countries API
-
-1. In App.jsx, create API call that pulls countries data from the [REST Countries API](https://restcountries.com) using useEffect
-2. Display countries data from API call on the Home page, instead of displaying data from `data.json`
-3. Push your code to Github!
 
 ### Step 4: Create Header
 
