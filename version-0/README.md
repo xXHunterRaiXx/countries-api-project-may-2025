@@ -63,8 +63,9 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 4. Push your code to Github!
 
 ### Final Steps
-1. Submit the link to your Github repo to Canvas! Even if you don't finish your Version 0 before the Backend class starts, please submit your link so that your instructor can see what you have done so far.
-2. On Day 1 of the Backend class, you’ll present your progress!  Even if it’s not fully complete, don’t worry — we’re excited to see what you’ve built and hear you explain your approach! 💪
+1. Write comments throughout your code as a favor for future you! You will be building on top of this project over the course of 3 months. Future you will have to come back and re-read all of the code you wrote in the past. Help future you understand your code by writing comments to explain what the code is doing.
+2. Submit the link to your Github repo to Canvas! Even if you don't finish your Version 0 before the Backend class starts, please submit your link so that your instructor can see what you have done so far.
+3. On Day 1 of the Backend class, you’ll present your progress!  Even if it’s not fully complete, don’t worry — we’re excited to see what you’ve built and hear you explain your approach! 💪
 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
