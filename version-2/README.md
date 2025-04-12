@@ -2,11 +2,9 @@
 
 ## 👋 Welcome!
 
-Your challenge is to build a website with React.js that pulls country data from the [REST Countries API](https://restcountries.com) and displays it like the designs.
+Version 2 builds on the Version 1 of the Countries API app by saving data in the browser using Local Storage. Your application will remember the user's Form data, Saved Countries, and how many times each country has been viewed. By storing persistent data, your app will become more personal, dynamic, and interactive.
 
 ## 🎯 Requirements for Version 1
-
-In Version 2, your challenge is to build on top of Version 1 by storing data locally in the browser using Local Storage. 
 
 Include functionality in your Countries API project that saves the following data to local storage: 
 
