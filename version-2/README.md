@@ -37,7 +37,7 @@ Make sure you've finished Version 1 before moving on with the following steps.
 ### Project Setup: Copy your files over 
 1. Copy all of the files inside of your `version-1` folder
 2. Paste all of the files into your `version-2` folder
-3. Push your code to Github! You will use your `version-1` project as the starting point for your `version-2`. 
+3. Push your code to Github! You will use your `version-1` code as the starting point for your `version-2`. 
 
 ### Pseudo-code: Review your code 
 1. Review your code so far. Review each component's purpose and its code. Consider where you will be storing the 3 pieces of data (form, saved countries, and view count).
