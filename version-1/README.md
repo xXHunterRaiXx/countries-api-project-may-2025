@@ -56,13 +56,16 @@ Make sure you've finished Version 0 before moving on with the following steps.
 ### Build the SavedCountries Page
 1. In SavedCountries.jsx, create the Form so that the user can submit their profile information
 2. Style the Form according to the designs
+3. Push your code to Github!
 
 ### Create the CountryInfo page
-1. Create the Country Info page and and style it according to the designs. 
+1. Create the Country Info page and and style it according to the designs.
+2. Push your code to Github!
 
 ### Clean and Comment your code 
 1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
 2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+3. Push your code to Github!
 
 ### Deploy project to Netlify
 1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this guide to help you](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz).
