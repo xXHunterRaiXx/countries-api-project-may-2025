@@ -17,7 +17,7 @@ In Version 0, you'll build a mobile-responsive React app that:
 
 ## Pages & Routes 
 
-You will use React Router to set up the routes for 3 pages: 
+You will use `react-router` to set up the Routes for 3 pages: 
 - Home page
 - Saved Countries page
 - Country Detail page
@@ -27,7 +27,9 @@ The Header will have the following links:
 - When the user clicks on "Saved Countries" in the Header, they should be routed to the Saved Countries page
 - When the user clicks on a CountryCard, they should be routed to the Country Detail page with more information about that country
 
-Refer to [this guide to help you set up React Router](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi). 
+Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you set up your Routes and pages. 
+
+Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the Saved Countries page and the Country Detail pages until the Backend class starts. 
 
 ## 🔗 Resources
 
