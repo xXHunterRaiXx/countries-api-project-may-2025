@@ -8,14 +8,26 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 In Version 0, you'll build a mobile-responsive React app that:
 
-- Displays country data from the `localData.js` file
 - Shows all countries on the Home page using a reusable CountryCard component
+- Displays country data from the `localData.js` file 
 - Is styled according to provided Figma designs
-- Uses `react-router` to navigate between pages
-- Includes: Home, SavedCountries, and CountryInfo pages
+- Has a Header component, which links to the Home page and the Saved Countries page 
 
 ![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
 
+## Pages & Routes 
+
+You will use React Router to set up the routes for 3 pages: 
+- Home page
+- Saved Countries page
+- Country Detail page
+
+The Header will have the following links: 
+- When the user clicks on "Where in the World?" in the Header, they should be routed to the Home page
+- When the user clicks on "Saved Countries" in the Header, they should be routed to the Saved Countries page
+- When the user clicks on a CountryCard, they should be routed to the Country Detail page with more information about that country
+
+Refer to [this guide to help you set up React Router](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi). 
 
 ## 🔗 Resources
 
