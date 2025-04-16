@@ -11,57 +11,49 @@ In Version 0, you'll build a mobile-responsive React app that:
 - Shows all countries on the Home page using a reusable CountryCard component
 - Displays country data from the `localData.js` file 
 - Is styled according to provided Figma designs
-- Has a Header component, which links to the Home page and the Saved Countries page 
 
-![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
-
-## 📖 Pages & Routes 
-
-You will use `react-router` to set up the Routes for 3 pages: 
-- Home page
-- Saved Countries page
-- Country Detail page
-
-Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you set up your Routes and pages. 
-
-Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the Saved Countries page and the Country Detail pages until the Backend class starts. 
-
-## ⚙️ Components 
-
-Your React project should have the following components: 
-- Header
-- CountryCard
-- CountryCardList
-
-### Header Component
-
-![image](https://github.com/user-attachments/assets/2a6311a4-70a1-48a5-8f9a-3b44bbad6a3e)
-
-The Header will have the following Links: 
-- When the user clicks on "Where in the World?" in the Header, they should be routed to the Home page
-- When the user clicks on "Saved Countries" in the Header, they should be routed to the Saved Countries page
-
-Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you with setting up the Links. 
-
-### CountryCard Component
-
-This component displays data for a single country. 
-
-![image](https://github.com/user-attachments/assets/78528aa5-655c-4b2c-add7-319bfde63143)
-
-
-### CountryCardList Component
-
-This component maps over the array of data from the `localData.js` file and renders a list of `CountryCard` components
-
-![image](https://github.com/user-attachments/assets/b69c6d6b-e06c-440f-8b1a-a342fc16f245)
-
+![Example of Version 0 project](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
 
 ## 🔗 Resources
 
 - **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1045-2&p=f&t=T2oSD2lU7TuxaG13-0) for the designs
 - **Style Guide:** Refer to the `style-guide.md` file for info about the color palette, fonts, and design.
 - **Local Countries Data:** You will use the `localData.js` file to get the country data and flag images
+
+## 📖 Pages & Routes 
+
+You will use `react-router` to set up the Routes for 3 pages: 
+- Home page
+- SavedCountries page
+- CountryDetail page
+
+Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you set up your pages, Routes, and Links. 
+
+Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the SavedCountries page and the CountryDetail page until the Backend class starts. 
+
+In addition, your App.jsx file should render a header: 
+![Header of Countries API Project](https://github.com/user-attachments/assets/2a6311a4-70a1-48a5-8f9a-3b44bbad6a3e)
+
+This header will have the following Links: 
+- When the user clicks on "Where in the World?", they should be routed to the Home page
+- When the user clicks on "Saved Countries", they should be routed to the SavedCountries page
+
+## ⚙️ Components 
+
+Your Version 0 should have the following 2 components: CountryCard and CountryCardList. 
+
+### CountryCard 
+
+This component displays data for a single country 
+
+![CountryCard component which displays data for a single country](https://github.com/user-attachments/assets/78528aa5-655c-4b2c-add7-319bfde63143)
+
+### CountryCardList 
+
+This component maps over the array of data from the `localData.js` file and renders a list of `CountryCard` components
+
+![CountryCardList component which displays a list of CountryCard components](https://github.com/user-attachments/assets/b69c6d6b-e06c-440f-8b1a-a342fc16f245)
+
 
 ## 📝 Tips for building your project
 
