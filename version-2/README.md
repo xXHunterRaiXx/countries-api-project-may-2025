@@ -39,30 +39,28 @@ Make sure you've finished Version 1 before moving on with the following steps.
 2. Paste all of the files into your `version-2` folder
 3. Push your code to Github! You will use your `version-1` code as the starting point for your `version-2`. 
 
-### Pseudo-code: Review your code 
-1. Review your code so far. Review each component's purpose and its code. Consider where you will be storing the 3 pieces of data (form, saved countries, and view count).
-2. Make a list of the things you will need to do in order to build your Version 2. 
+### Review your code 
+1. Before you jump into writing and re-factoring code for your Version 2, first you should review what you've got so far. Review the code in the App.jsx file, the App.css file, each page, and each component. Consider where you will be storing and retrieving with the 3 pieces of data (form, saved countries, and view count). 
 
 ### Storing Form data
-1. Review your Form on the Saved Countries page. Pseudo-code what you will need to do to store and retrieve the Form data. 
-2. When the user submits the form, store the data in Local Storage.
-3. When loading the Saved Countries page, check Local Storage to see if the user has already submitted the form. If the user already has data stored in Local Storage, retrieve that data and display "Welcome, {user}!" instead of the Form.
+1. Pseudo-code what you will need to do to store and retrieve the Form data. 
+2. Work on storing Form data in Local Storage. When the user submits the form, the form data should be stored in Local Storage.
+3. Work on retrieving Form data from Local Storage. If the user has already submitted the Form, display "Welcome, {user}!" instead of the Form.
 4. Comment the code you wrote so that Future You can understand it later.
 5. Push your code to Github! 
 
 ### Storing Saved Countries data
 1. Pseudo-code what you will need to do to store and retrieve the Saved Countries data.
-2. When the user saves a country, store the saved country's data in Local Storage.
-3. When loading the Saved Countries page, get the Saved Countries data from Local Storage. Display those countries as CountryCards on the Saved Countries page. 
+2. Work on saving a country in Local Storage. When the user saves a country, store the country's data in Local Storage.
+3. Work on retrieving the saved countries data from Local Storage, so that they show on the Saved Countries page. 
 4. Comment the code you wrote so that Future You can understand it later.
 5. Push your code to Github!
 
 ### Storing View Count data 
 1. Pseudo-code what you will need to do to store and retrieve the View Count data. 
-2. When the user views a country's page, get its View Count from Local Storage and display it to the user.
-3. When the user views a country's page, increment its View Count by 1 and store the updated View Count in Local Storage. 
-4. Comment the code you wrote so that Future You can understand it later.
-5. Push your code to Github!
+2. When the user views a country's CountryDetail page, that country's view count should go up by 1. Also, the user should see how many times the country has been viewed. 
+3. Comment the code you wrote so that Future You can understand it later.
+4. Push your code to Github!
 
 ### Clean and Comment your code 
 1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
