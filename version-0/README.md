@@ -46,7 +46,9 @@ Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0be
 ### CountryCard
 
 This component displays data for a single country. 
-![image](https://github.com/user-attachments/assets/80c29834-7a45-468c-9f51-e72cb0ec5f73)
+
+![image](https://github.com/user-attachments/assets/78528aa5-655c-4b2c-add7-319bfde63143)
+
 
 ### CountryCardList 
 
