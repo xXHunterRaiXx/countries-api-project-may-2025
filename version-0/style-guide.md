@@ -11,10 +11,10 @@ The designs were created to the following widths:
 
 ## Colors
 
-- Dark Blue (Text Color): #111517
-- Dark Gray (Input): #858585
-- Light Gray (Background Color): #fafafa
-- White: #ffffff
+- Dark Blue (Text Color): `#111517`
+- Dark Gray (Input): `#858585`
+- Light Gray (Background Color): `#fafafa`
+- White: `#ffffff`
 
 ## Typography
 
