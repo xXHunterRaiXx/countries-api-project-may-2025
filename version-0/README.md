@@ -22,20 +22,40 @@ You will use `react-router` to set up the Routes for 3 pages:
 - Saved Countries page
 - Country Detail page
 
-The Header will have the following links: 
-- When the user clicks on "Where in the World?" in the Header, they should be routed to the Home page
-- When the user clicks on "Saved Countries" in the Header, they should be routed to the Saved Countries page
-- When the user clicks on a CountryCard, they should be routed to the Country Detail page with more information about that country
-
 Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you set up your Routes and pages. 
 
 Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the Saved Countries page and the Country Detail pages until the Backend class starts. 
+
+## Components 
+
+Your React project should have the following components: 
+- Header
+- CountryCard
+- CountryCardList
+
+### Header
+
+![image](https://github.com/user-attachments/assets/2a6311a4-70a1-48a5-8f9a-3b44bbad6a3e)
+
+The Header will have the following Links: 
+- When the user clicks on "Where in the World?" in the Header, they should be routed to the Home page
+- When the user clicks on "Saved Countries" in the Header, they should be routed to the Saved Countries page
+
+Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you with setting up the Links. 
+
+### CountryCard
+![image](https://github.com/user-attachments/assets/80c29834-7a45-468c-9f51-e72cb0ec5f73)
+
+### CountryCardList 
+
+![image](https://github.com/user-attachments/assets/60bb4f01-38a6-4d0c-971c-6d74c5539cf0)
+
 
 ## 🔗 Resources
 
 - **Designs:** You will need to use this [Figma file](https://www.figma.com/design/YuEMNteoQic0h6RRiYprpV/Countries-API-Project?node-id=1045-2&p=f&t=T2oSD2lU7TuxaG13-0) for the designs
 - **Style Guide:** Refer to the `style-guide.md` file for info about the color palette, fonts, and design.
-- **API:** You will use the [REST Countries API](https://restcountries.com) to get the country data and flag images
+- **Local Countries Data:** You will use the `localData.js` file to get the country data and flag images
 
 ## 📝 Tips for building your project
 
