@@ -15,7 +15,7 @@ In Version 0, you'll build a mobile-responsive React app that:
 
 ![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
 
-## Pages & Routes 
+## 📖 Pages & Routes 
 
 You will use `react-router` to set up the Routes for 3 pages: 
 - Home page
@@ -26,14 +26,14 @@ Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the Saved Countries page and the Country Detail pages until the Backend class starts. 
 
-## Components 
+## ⚙️ Components 
 
 Your React project should have the following components: 
 - Header
 - CountryCard
 - CountryCardList
 
-### Header
+### Header Component
 
 ![image](https://github.com/user-attachments/assets/2a6311a4-70a1-48a5-8f9a-3b44bbad6a3e)
 
@@ -43,16 +43,16 @@ The Header will have the following Links:
 
 Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you with setting up the Links. 
 
-### CountryCard
+### CountryCard Component
 
 This component displays data for a single country. 
 
 ![image](https://github.com/user-attachments/assets/78528aa5-655c-4b2c-add7-319bfde63143)
 
 
-### CountryCardList 
+### CountryCardList Component
 
-This component maps over the array of countries data and renders a list of `CountryCard` components
+This component maps over the array of data from the `localData.js` file and renders a list of `CountryCard` components
 
 ![image](https://github.com/user-attachments/assets/b69c6d6b-e06c-440f-8b1a-a342fc16f245)
 
