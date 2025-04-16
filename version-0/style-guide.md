@@ -12,9 +12,9 @@ The designs were created to the following widths:
 ## Colors
 
 - Dark Blue (Text Color): `#111517`
-- Dark Gray (Input): `#858585`
 - Light Gray (Background Color): `#fafafa`
-- White: `#ffffff`
+- White (CountryCard Background Color): `#ffffff`
+- Dark Gray (Input Border Color): `#858585`
 
 ## Typography
 
