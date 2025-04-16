@@ -52,7 +52,7 @@ This component displays data for a single country.
 
 This component maps over the array of countries data and renders a list of `CountryCard` components
 
-![image](https://github.com/user-attachments/assets/60bb4f01-38a6-4d0c-971c-6d74c5539cf0)
+![image](https://github.com/user-attachments/assets/b69c6d6b-e06c-440f-8b1a-a342fc16f245)
 
 
 ## 🔗 Resources
