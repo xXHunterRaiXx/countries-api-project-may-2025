@@ -44,9 +44,13 @@ The Header will have the following Links:
 Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you with setting up the Links. 
 
 ### CountryCard
+
+This component displays data for a single country. 
 ![image](https://github.com/user-attachments/assets/80c29834-7a45-468c-9f51-e72cb0ec5f73)
 
 ### CountryCardList 
+
+This component maps over the array of countries data and renders a list of `CountryCard` components
 
 ![image](https://github.com/user-attachments/assets/60bb4f01-38a6-4d0c-971c-6d74c5539cf0)
 
@@ -92,13 +96,8 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 ### In the Home page, display localData from `localData.js` file
 1. In Home.jsx, import the `localData.js` file. This file contains all of the data about each country as an array of objects.  
-2. In Home.jsx, display all of the data about each country.
-   
-    💡 **Tip:** Create reusable components:
-        - `CountryCard` – displays data for a single country
-        - `CountryCardList` – maps over the array of countries and renders a list of `CountryCard` components
-
-3. In App.css, style the country data according to the Figma designs
+2. In Home.jsx, display all of the data about each country. Create the CountryCard and CountryCardList components. 
+3. In App.css, style the Home page, CountryCard, and CountryCardList components according to the Figma designs
 4. Don't forget to push your code to Github!
 
 ### Final Steps
