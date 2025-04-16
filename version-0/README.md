@@ -31,10 +31,10 @@ Refer to [this react-router guide](https://docs.google.com/document/d/18jxCUA0be
 
 Even though you are setting up the Routes for all 3 pages, you only need to fully build out the Home page so that it displays the country data. You won't need to build out the SavedCountries page and the CountryDetail page until the Backend class starts. 
 
-In addition, your App.jsx file should render a header: 
+In addition, your App.jsx file should render a header with two links: 
+
 ![Header of Countries API Project](https://github.com/user-attachments/assets/2a6311a4-70a1-48a5-8f9a-3b44bbad6a3e)
 
-This header will have the following Links: 
 - When the user clicks on "Where in the World?", they should be routed to the Home page
 - When the user clicks on "Saved Countries", they should be routed to the SavedCountries page
 
@@ -77,16 +77,14 @@ This component maps over the array of data from the `localData.js` file and rend
 ### Set up Routes with `react-router`
 Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) as you do the following steps:
 1. In the terminal, in your `version-0` folder, install the `react-router` package using the command `npm install react-router`. 
-2. In App.jsx file, set up Routes for 3 pages: Home page, SavedCountries page, and CountryInfo page. 
-3. In the `src` folder, create a `pages` folder
-4. In the `pages` folder, set up components for each page by making these 3 files: Home.jsx, SavedCountries.jsx, and CountryInfo.jsx  
-5. Don't forget to push your code to Github!
-
-### Create Header
-1. Create the Header component, which will be displayed on the Home page.
-2. In App.css, style the Header component with CSS
-3. Clicking on "Where in the world?" should link to the Home page, and clicking on "Saved Countries" should link to the SavedCountries page. Use the Link component provided by the `react-router` library to make this happen. Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.hbxxe6vmm0fq#heading=h.snu4ai1ffrgi) to help you. 
-4. Push your code to Github!
+2. In App.jsx file, set up Routes for 3 pages: Home page, SavedCountries page, and CountryDetail page.
+3. In App.jsx, render a header that contains two links:
+     - "Where in the world?" should link to the Home page
+     - "Saved Countries" should link to the SavedCountries page
+4. In the `src` folder, create a `pages` folder
+5. In the `pages` folder, set up components for each page by making these 3 files: Home.jsx, SavedCountries.jsx, and CountryDetail.jsx
+6. In App.css, style the header 
+7. Don't forget to push your code to Github!
 
 ### In the Home page, display localData from `localData.js` file
 1. In Home.jsx, import the `localData.js` file. This file contains all of the data about each country as an array of objects.  
