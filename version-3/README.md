@@ -6,6 +6,8 @@ Instead of storing data in local storage, Version 3 should store data remotely u
 
 Supabase is a Backend-as-a-Service (BaaS) platform that provides a fully hosted backend for web applications. It allows us to store and manage our data in the cloud without having to build a custom backend from scratch.
 
+This version introduces you to working with a real backend service and helps you understand how frontend applications interact with remote databases through APIs.
+
 Up next, in Version 4, you will learn how to build a custom backend from scratch! 
 
 ## 🎯 Requirements for Version 3
