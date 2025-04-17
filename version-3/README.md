@@ -2,9 +2,13 @@
 
 ## 👋 Welcome!
 
-Instead of storing data in local storage, your Version 3 should store data remotely in Supabase. 
+Instead of storing data in local storage, Version 3 should store data remotely using Supabase.
 
-## 🎯 Requirements for Version 1
+Supabase is a Backend-as-a-Service (BaaS) platform that provides a fully hosted backend for web applications. It allows us to store and manage our data in the cloud without having to build a custom backend from scratch.
+
+Up next, in Version 4, you will learn how to build a custom backend from scratch! 
+
+## 🎯 Requirements for Version 3
 
 Include functionality in your Countries API project that stores and retrieves the following data from Supabase: 
 
