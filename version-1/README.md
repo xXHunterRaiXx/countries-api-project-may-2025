@@ -11,7 +11,7 @@ In Version 1, you'll build a mobile-responsive React app that:
 - Displays country data from the [REST Countries API](https://restcountries.com), or from `localData.js` file when the API is down
 - Is styled according to provided Figma designs
 - Uses `react-router` to navigate between pages
-- Includes: Home, SavedCountries, and CountryInfo pages
+- Includes: Home, SavedCountries, and CountryDetail pages
 - Deployed to a Netlify URL
 - As a user, I can see all countries on the Home page, with data displayed about each country
 - As a user, I can submit a form with my profile information on the Saved Countries page 
@@ -24,7 +24,7 @@ Stretch goals for the project (not required)
 - As a user, I can toggle the color scheme between light and dark mode
 - As a user, I can click through to the bordering countries on the detail page
 
-![image](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
+![Example of Version 1 of Countries API Project](https://github.com/user-attachments/assets/79094b58-6856-4491-8fa5-0a394f85f0b9)
 
 
 ## 🔗 Resources
@@ -56,16 +56,19 @@ Make sure you've finished Version 0 before moving on with the following steps.
 ### Build the SavedCountries Page
 1. In SavedCountries.jsx, create the Form so that the user can submit their profile information
 2. Style the Form according to the designs
+3. Push your code to Github!
 
-### Create the CountryInfo page
-1. Create the Country Info page and and style it according to the designs. 
+### Create the CountryDetail page
+1. Create the CountryDetail page and and style it according to the designs.
+2. Push your code to Github!
 
 ### Clean and Comment your code 
 1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
 2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+3. Push your code to Github!
 
 ### Deploy project to Netlify
-1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this guide to help you](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz).
+1. Deploy your completed project to [Netlify](https://www.netlify.com/) via your Github repo. In your Netlify Deploy settings, you will need to specify which version you want to deploy. Check out [this deployment guide to help you](https://docs.google.com/document/d/18jxCUA0bebCyYaIHy8aaKMgOQH4w5-b-iCGDWpV4K4M/edit?tab=t.jnwta4jrhylr#heading=h.scmsi7a6s9yz).
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
