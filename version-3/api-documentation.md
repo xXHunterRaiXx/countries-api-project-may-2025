@@ -2,6 +2,9 @@
 
 Base URL: `https://backend-answer-keys.onrender.com`
 
+
+## Overview
+
 | Resource         | Method | Endpoint                   | Description                                           |
 |------------------|--------|----------------------------|-------------------------------------------------------|
 | `users`          | GET    | /get-newest-user           | Retrieves the most recently added user.              |
@@ -12,9 +15,11 @@ Base URL: `https://backend-answer-keys.onrender.com`
 | `saved_countries`| POST   | /save-one-country          | Saves a country if it hasn’t already been saved.     |
 
 
+## Users
+
 ---
 
-## 🔹 GET `/get-newest-user`
+### 🔹 GET `/get-newest-user`
 
 **Description:** Retrieves the most recently added user.
 
@@ -34,7 +39,7 @@ Base URL: `https://backend-answer-keys.onrender.com`
 
 ---
 
-## 🔹 GET `/get-all-users`
+### 🔹 GET `/get-all-users`
 
 **Description:** Retrieves all users in the system ordered by `user_id`.
 
@@ -61,7 +66,7 @@ Base URL: `https://backend-answer-keys.onrender.com`
 
 ---
 
-## 🔹 POST `/add-one-user`
+### 🔹 POST `/add-one-user`
 
 **Description:** Adds a new user.
 
@@ -84,7 +89,11 @@ Success! User has been added.
 
 ---
 
-## 🔹 POST `/update-one-country-count`
+## Country Counts
+
+---
+
+### 🔹 POST `/update-one-country-count`
 
 **Description:** Increments the view count of a given country. If it doesn't exist, initializes it with count 1.
 
@@ -106,7 +115,11 @@ Success! User has been added.
 
 ---
 
-## 🔹 GET `/get-all-saved-countries`
+## Saved Countries
+
+---
+
+### 🔹 GET `/get-all-saved-countries`
 
 **Description:** Retrieves all saved country names.
 
@@ -125,7 +138,7 @@ Success! User has been added.
 
 ---
 
-## 🔹 POST `/save-one-country`
+### 🔹 POST `/save-one-country`
 
 **Description:** Saves a country name if it hasn’t already been saved.
 
