@@ -92,11 +92,14 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 3. In App.css, style the Home page, CountryCard, and CountryCardList components according to the Figma designs
 4. Don't forget to push your code to Github!
 
-### Final Steps
+### Clean and Comment your code
 1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
 2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
-3. Push your code, then submit the Github repo link to Canvas. Whether or not your Version 0 is complete, your instructor needs to see your progress. 
-4. Be ready to demo what you've got on Day 1 of Backend — complete or not. We want to see your thinking and progress! 💡 
+3. Don't forget to push your code to Github! 
+
+### Submit to Canvas, and prepare for your demo 
+1. Submit the Github repo link to Canvas. Whether or not your Version 0 is complete, your instructor needs to see your progress. 
+2. Be ready to demo what you've got on Day 1 of Backend — complete or not. We want to see your thinking and progress! 💡 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
 
