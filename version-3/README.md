@@ -2,20 +2,18 @@
 
 ## 👋 Welcome!
 
-Instead of storing data in local storage, Version 3 should store data remotely using Supabase.
+In Version 3, instead of using local storage, you'll store and retrieve data from a backend that's provided for you.
 
-Supabase is a Backend-as-a-Service (BaaS) platform that provides a fully hosted backend for web applications. It allows us to store and manage our data in the cloud without having to build a custom backend from scratch.
+This version is your introduction to how a frontend communicates with a backend using requests. You'll use the Fetch API to send and receive data.
 
-This version introduces you to working with a real backend service and helps you understand how frontend applications interact with remote databases through APIs.
-
-Up next, in Version 4, you will learn how to build a custom backend from scratch! 
+Coming up in Version 4, you'll take it a step further by building your own custom backend from scratch!
 
 ## 🎯 Requirements for Version 3
 
-Include functionality in your Countries API project that stores and retrieves the following data from Supabase: 
+Include functionality in your Countries API project that stores and retrieves the following data to the backend: 
 
 1. **Form data**
-    - As a user, when I submit the form, my data should be stored in the `users` table in Supabase. 
+    - As a user, when I submit the form, my data should be stored in the backend
     - As a user, if I have already submitted the form, I should see "Welcome, [my name]!" instead of the form. 
 2. **Saved Countries data**
     - As a user, on my Saved Countries page, I should be able to see all of the Saved Countries.
@@ -27,6 +25,8 @@ Include functionality in your Countries API project that stores and retrieves th
 ## 🔗 Resources
 
 - **API:** You will use the [REST Countries API](https://restcountries.com) to get the country data and flag images
+- **Fetch API Guide** MDN Web Docs has a great [Fetch API guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) that teaches you how to make requests for data from the backend.
+- **API documentation** Check out the `api-documentation.md` file for all the API endpoints you can use to send and receive data. 
 
 ## 📝 Tips for building your project
 
