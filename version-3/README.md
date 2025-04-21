@@ -42,7 +42,7 @@ Make sure you've finished Version 2 before starting.
 
 ### Project Setup: Copy your files over 
 1. Copy all of the files from your `version-2` folder and paste them into your `version-3` folder
-2. Push your code to Github! You will use your `version-2` code as the starting point for your `version-3`. 
+2. Push your code to Github! Your `version-2` code will serve as the starting point for `version-3`. 
 
 ### Review and Plan
 1. Take time to understand your current code: App.jsx, App.css, pages, and components.
