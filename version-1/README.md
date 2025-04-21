@@ -8,7 +8,7 @@ Your challenge is to build a website with React.js that pulls country data from 
 
 In Version 1, you'll build a mobile-responsive React app that:
 
-- Displays country data from the [REST Countries API](https://restcountries.com), or from `localData.js` file when the API is down
+- Displays country data from the [REST Countries API](https://restcountries.com), or from `localData.js` file as a backup when the API is down
 - Is styled according to provided Figma designs
 - Uses `react-router` to navigate between pages
 - Includes: Home, SavedCountries, and CountryDetail pages
