@@ -22,10 +22,10 @@ You'll end the course having built Version 5, which is a full-stack web applicat
 
 | Version | Feature added | Where data is stored | 
 | ------- | ---------- | ---- |
-| 0 | Frontend only - Home page | No data stored. |
-| 1 | Frontend only - Home page, SavedCountries page, CountryDetail page| No data stored. |
+| 0 | Frontend UI - Home page | No data stored. |
+| 1 | Frontend UI - Home page, SavedCountries page, CountryDetail page| No data stored. |
 | 2 | Local Storage | Data is stored locally in the browser with Local Storage. |
-| 3 | Supabase | Data is stored remotely in the Supabase database. I have no control over the data communication. |
+| 3 | Fetch API | Data is stored remotely in the backend. I have no control over the backend, but I can store and retrieve data using HTTP requests. |
 | 4 | Local Postgres Database with API layer + Node.js | Data is stored in a local database, and I am responsible for how it is called and received (or placed) in the database. I control and have built all aspects of the data communication and the data storage in the database. |
 | 5 | Remote Postgres Database with API layer + Node.js | I have deployed my database to a remote server! |
 
