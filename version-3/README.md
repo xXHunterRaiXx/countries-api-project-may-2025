@@ -2,15 +2,17 @@
 
 ## 👋 Welcome!
 
-In Version 3, instead of using local storage, you'll store and retrieve data from a backend that's provided for you.
+In Version 3, you’ll upgrade your project to connect with a real backend!
 
-This version is your introduction to how a frontend communicates with a backend using requests. You'll use the Fetch API to send and receive data.
+Instead of storing data in local storage, you'll now store and retrieve data from a backend that’s provided for you. This version introduces how a frontend communicates with a backend using HTTP requests.
 
-Coming up in Version 4, you'll take it a step further by building your own custom backend from scratch!
+You’ll use the Fetch API to send and receive data — a critical skill for building real-world apps.
+
+Coming up in Version 4, you'll go even further and build your own backend from scratch!
 
 ## 🎯 Requirements for Version 3
 
-Include functionality in your Countries API project that stores and retrieves the following data to the backend: 
+Include functionality in your Countries API project to store and retrieve these 3 types of data using the backend: 
 
 1. **Form data**
     - As a user, when I submit the form, my data should be stored in the backend
@@ -36,39 +38,40 @@ Include functionality in your Countries API project that stores and retrieves th
 4. **Clean up your code as you go**. Rename confusing variables, remove unused code, and organize your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
 
 ## 🚀 Roadmap: Step-by-step guide to building Version 3
-Make sure you've finished Version 1 before moving on with the following steps.
+Make sure you've finished Version 2 before starting. 
 
 ### Project Setup: Copy your files over 
-1. Copy all of the files inside of your `version-2` folder
-2. Paste all of the files into your `version-3` folder
-3. Push your code to Github! You will use your `version-2` code as the starting point for your `version-3`. 
+1. Copy all of the files from your `version-2` folder and paste them into your `version-3` folder
+2. Push your code to Github! You will use your `version-2` code as the starting point for your `version-3`. 
 
-### Review your code 
-1. Before you jump into writing and re-factoring code for your Version 3, first you should review what you've got so far. Review the code in the App.jsx file, the App.css file, each page, and each component. Consider where you will be storing and retrieving the 3 pieces of data (form, saved countries, and view count). 
+### Review and Plan
+1. Take time to understand your current code: App.jsx, App.css, pages, and components.
+2. Think through where you will be storing and retrieving the 3 pieces of data (form, saved countries, and view count). 
 
-### Storing Form data
-1. Pseudo-code what you will need to do to store and retrieve the Form data. 
-2. Work on storing Form data in Supabase. When the user submits the form, the form data should be stored in Supabase.
-3. Work on retrieving Form data from Supabase. If the user has already submitted the Form, display "Welcome, {user}!" instead of the Form.
-4. Comment the code you wrote so that Future You can understand it later.
+### Implement Form data
+1. Pseudo-code your plan to store and retrieve Form data. 
+2. When the user submits the form, send the form data to the backend.
+3. If the user has already submitted the form, display “Welcome, [name]!” instead.
+4. Add comments explaining your logic so that Future You can understand it later.
 5. Push your code to Github! 
 
-### Storing Saved Countries data
-1. Pseudo-code what you will need to do to store and retrieve the Saved Countries data.
-2. Work on saving a country in Supabase. When the user saves a country, store the country's data in Supabase.
-3. Work on retrieving the saved countries data from Supabase, so that they show on the Saved Countries page. 
-4. Comment the code you wrote so that Future You can understand it later.
+### Implement Saved Countries data
+1. Pseudo-code your plan to store and retrieve Saved Countries data.
+2. When the user saves a country, send that country's data to the backend.
+3. Retrieve and display saved countries on the Saved Countries page.
+4. Add comments explaining your logic so that Future You can understand it later.
 5. Push your code to Github!
 
-### Storing View Count data 
-1. Pseudo-code what you will need to do to store and retrieve the View Count data. 
-2. When the user views a country's CountryDetail page, that country's view count should go up by 1. Also, the user should see how many times the country has been viewed. 
-3. Comment the code you wrote so that Future You can understand it later.
-4. Push your code to Github!
+### Implement View Count data 
+1. Pseudo-code your plan for tracking the View Count data. 
+2. Each time the user views a country's CountryDetail page, increase its view count by 1.
+3. Display the updated view count on the country's CountryDetail page. 
+4. Add comments explaining your logic so that Future You can understand it later.
+5. Push your code to Github!
 
 ### Clean and Comment your code 
-1. Clean up your code by renaming confusing variables, removing unused code, and organizing your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
-2. Comment your code generously — Future You will thank you. You’ll be building on top of this project over the next 3 months, so help yourself out by writing clear, helpful comments that explain what your code is doing. Trust us, it will save you time and confusion later.
+1. Rename confusing variables, remove unused code, and organize your logic. Your code should read like a newspaper: clear, easy to follow, and understandable at a glance.
+2. Write helpful comments explaining tricky logic — Future You will thank you. 
 3. Push your code to Github!
 
 ### Deploy project to Netlify
