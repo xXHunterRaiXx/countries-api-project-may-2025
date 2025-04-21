@@ -139,6 +139,6 @@ Success! User has been added.
 
 **Response:**
 
-```json
+```
 Success! The country is saved.
 ```
