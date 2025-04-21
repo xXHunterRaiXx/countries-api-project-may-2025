@@ -4,7 +4,7 @@
 
 Version 2 builds on the Version 1 of the Countries API app by saving data in the browser using Local Storage. Your application will remember the user's Form data, Saved Countries, and how many times each country has been viewed. By storing persistent data, your app will become more personal, dynamic, and interactive.
 
-## 🎯 Requirements for Version 1
+## 🎯 Requirements for Version 2
 
 Include functionality in your Countries API project that saves the following data to local storage: 
 
