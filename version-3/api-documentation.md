@@ -49,7 +49,13 @@ Base URL: `https://backend-answer-keys.onrender.com`
     "email": "jane@example.com",
     "bio": "Short bio here"
   },
-  ...
+  {
+    "user_id": 2,
+    "name": "Paul Smith",
+    "country_name": "Australia",
+    "email": "paul@example.com",
+    "bio": "Short bio here"
+  },
 ]
 ```
 
@@ -72,7 +78,7 @@ Base URL: `https://backend-answer-keys.onrender.com`
 
 **Response:**
 
-```json
+```
 Success! User has been added.
 ```
 
@@ -125,7 +131,7 @@ Success! User has been added.
 
 **Request Body:**
 
-```json
+```
 {
   "country_name": "Brazil"
 }
