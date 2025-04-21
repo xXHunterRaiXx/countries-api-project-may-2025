@@ -1,9 +1,5 @@
 # Deploying to a Remote Database/Server on Render
 
-Last edited by: Arianna Ninh
-Last edited time: April 17, 2025 1:25 PM
-Tags: Backend, Technical
-Archived: No
 
 ## Introduction
 
@@ -60,12 +56,9 @@ We will be using Render to create a database that will be hosted on a server. Re
 - Go to [https://dashboard.render.com/billing#plan](https://dashboard.render.com/billing#plan) to sign up. You can use your email or connect your Github to sign up.
 - Enter information about your profile, and then select Hobbyist as the plan.
 
-<aside>
-🎯
 
-Step 1 complete: Now you should have a Render account! 
-
-</aside>
+> 🎯 
+> Step 1 complete: Now you should have a Render account! 
 
 ---
 
@@ -84,12 +77,8 @@ We will create a web service that will host our Node code.
 
 - Select the Free option and start the deployment
 
-<aside>
-🎯
-
-Step 2 complete: Now your server should be fully deployed on Render! 
-
-</aside>
+> 🎯
+> Step 2 complete: Now your server should be fully deployed on Render! 
 
 ---
 
@@ -107,12 +96,7 @@ We will create a Postgres database in order to host our data on a server.
 
 - Add a name (`countries_api_project_database`), select Free, and click Create Database.
 
-<aside>
-🎯
-
-Step 3 complete: Now you have an empty remote database that is deployed on Render! 
-
-</aside>
+> 🎯 Step 3 complete: Now you have an empty remote database that is deployed on Render! 
 
 ---
 
@@ -154,12 +138,8 @@ Step 3 complete: Now you have an empty remote database that is deployed on Rende
     - In your new server, open the Query tool
     - Run all of your `CREATE TABLE` and `INSERT INTO` commands which you should have already documented in your `database_schema.sql` file
 
-<aside>
-🎯
 
-Step 4 complete: We have successfully created a database that is running remotely on a server, AND we have connected to that database securely using pgAdmin!
-
-</aside>
+> 🎯 Step 4 complete: We have successfully created a database that is running remotely on a server, AND we have connected to that database securely using pgAdmin!
 
 ---
 
@@ -200,12 +180,8 @@ Step 4 complete: We have successfully created a database that is running remotel
 - Commit your code so that it pushes to Github (and redeploys to the server instance).
 - Now that your web server is running, if you have any console.log() calls in your index.js file, those will show up in the Logs section because this is deployed remotely. It’s not going to show up in the terminal anymore, because we’re no longer running our server on our local machine.
 
-<aside>
-🎯
 
-Step 5 complete: Now your web server can talk to your database server, both of which you deployed remotely to Render! 
-
-</aside>
+> 🎯 Step 5 complete: Now your web server can talk to your database server, both of which you deployed remotely to Render! 
 
 ---
 
@@ -258,12 +234,8 @@ We also need to make sure our CORs is set up properly. In your `vite.config.js` 
         ![image.png](Deploying%20to%20a%20Remote%20Database%20Server%20on%20Render%201d5bb7044bb18058b787fc258f37e764/image%206.png)
         
 
-<aside>
-🎯
 
-Step 6 complete: Now your `version-5` folder, which contains all of the frontend code, should be able to connect to your remote web server that you deployed on Render! 
-
-</aside>
+> 🎯 Step 6 complete: Now your `version-5` folder, which contains all of the frontend code, should be able to connect to your remote web server that you deployed on Render! 
 
 ---
 
@@ -273,12 +245,7 @@ Step 6 complete: Now your `version-5` folder, which contains all of the frontend
 - Open the Netlify deployment link in the browser.
 - Test your application by going to its Netlify deployment link. If it’s all working, then as you interact with your `version-5` site, you should see data show up in your tables on pgAdmin.
 
-<aside>
-🎯
-
-Step 7 complete: YAY! You’ve deployed your frontend! 
-
-</aside>
+> 🎯 Step 7 complete: YAY! You’ve deployed your frontend! 
 
 ---
 
@@ -298,12 +265,7 @@ Step 7 complete: YAY! You’ve deployed your frontend!
         - Each time you open a country’s CountryDetail page, do you see its view count go up by 1?
     - If you answered yes to all the above questions, you’re done!
 
-<aside>
-🎯
-
-Step 8 complete: YOU’RE DONE WITH VERSION 5! You’ve now built a full-stack application from start to finish, and deployed it remotely! Pat yourself on the back for all your hard work! 🎉
-
-</aside>
+> 🎯 Step 8 complete: YOU’RE DONE WITH VERSION 5! You’ve now built a full-stack application from start to finish, and deployed it remotely! Pat yourself on the back for all your hard work! 🎉
 
 ---
 
