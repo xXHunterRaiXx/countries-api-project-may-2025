@@ -32,7 +32,8 @@ There are many options for deploying your application to a remote database/serve
 
 ## Architecture
 
-[](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcN22oAtTbTuKYNu09gV0t4e0tBb5yQEo_kyNbLcspcU3-RbdCaddtO8p4vLYoRV_DdTa2D3J8sha9ZiWM50DMuUibvNVMTzR9JOB_ETP-MOH74Bsb0URIO4wPupEfxLNak4XGXiA?key=9je8baAxEYwQkPyIstTxIMhU)
+![image](https://github.com/user-attachments/assets/7b88eead-992c-4f87-a9b8-db16780b0223)
+
 
 ---
 
