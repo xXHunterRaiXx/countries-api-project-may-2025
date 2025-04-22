@@ -98,7 +98,7 @@ Refer to this [react-router guide](https://docs.google.com/document/d/18jxCUA0be
 3. Don't forget to push your code to Github! 
 
 ### Submit to Canvas, and prepare for your demo 
-1. Submit the Github repo link to Canvas. Whether or not your Version 0 is complete, your instructor needs to see your progress. 
+1. Submit the Github repo link to Canvas.
 2. Be ready to demo what you've got on Day 1 of Backend — complete or not. We want to see your thinking and progress! 💡 
 
 ### Stretch Goals (optional — only do these if you have completed _all_ of the above steps)
