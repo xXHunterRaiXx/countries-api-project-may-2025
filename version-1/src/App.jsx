@@ -17,6 +17,7 @@ function App() {
       })
       .catch((error) => console.error("Error:", error));
   }
+  //fetch api//
 
   return (
     <div>
@@ -30,6 +31,7 @@ function App() {
           </li>
         </ul>
       </nav>
+      {/* nav */}
 
       <Routes>
         <Route path="/" element={<Home />} />
