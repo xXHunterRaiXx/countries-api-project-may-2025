@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 function CountryCard({ name, flag, population, region, capital }) {
+  //name, flag, population, region, and capital are props//
   return (
     <>
       <div className="card">
@@ -13,6 +14,7 @@ function CountryCard({ name, flag, population, region, capital }) {
           <p>{population}</p>
           <p>{region}</p>
           <p>{capital}</p>
+          {/* calling the props */}
         </div>
       </div>
     </>

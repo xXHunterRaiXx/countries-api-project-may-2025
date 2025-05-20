@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
@@ -7,6 +7,8 @@ import CountryDetail from "./pages/CountryDetail";
 
 function App() {
   const [data, setData] = useState();
+
+  //data is a varible for the usestate//
 
   function callMyApi() {
     fetch(`https://restcountries.com/v3.1/all`)
@@ -17,7 +19,13 @@ function App() {
       })
       .catch((error) => console.error("Error:", error));
   }
+
   //fetch api//
+
+  useEffect(() => {
+    callMyApi();
+    console.log(data, "APP DATA ");
+  }, []);
 
   return (
     <div>
@@ -34,11 +42,12 @@ function App() {
       {/* nav */}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home data={data} />} />
         <Route path="/SavedCountries" element={<SavedCountries />} />
         <Route path="/CountryDetail" element={<CountryDetail />} />
       </Routes>
     </div>
+    // routes that let the linked area know whatere to go
   );
 }
 

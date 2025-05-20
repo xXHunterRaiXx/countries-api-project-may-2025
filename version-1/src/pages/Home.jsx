@@ -3,25 +3,15 @@ import { useState, useEffect } from "react";
 import React, { Component } from "react";
 import CountryCard from "../components/CountryCard";
 
-function Home() {
-  const [appData, setAppData] = useState(localData);
-  const [filteredCountries, setFilteredCountries] = useState("all");
-
-  // {
-  //   filteredCountries.map((country) => (
-  //     <h2 key={country.name.common}>{country.name.common}</h2>
-  //   ));
-  // }
-
-  useEffect(() => {
-    console.log(appData, "APP DATA ");
-  }, [appData]);
+function Home({ data }) {
+  // const [appData, setAppData] = useState(localData);
+  //usestate varible//
 
   return (
     <>
       <div>
         <div className="container">
-          {appData.map((item, key) => {
+          {data?.map((item, index) => {
             return (
               <CountryCard
                 flag={item.flags.png}
@@ -29,6 +19,7 @@ function Home() {
                 population={item.population}
                 region={item.region}
                 capital={item.capital}
+                key={index}
               />
             );
           })}
