@@ -1,4 +1,4 @@
-import localData from "../localData";
+// import localData from "../localData";
 import { useState, useEffect } from "react";
 import React, { Component } from "react";
 import CountryCard from "../components/CountryCard";

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function CountryCard({ name, flag, population, region, capital }) {
   //name, flag, population, region, and capital are props//
@@ -10,11 +10,13 @@ function CountryCard({ name, flag, population, region, capital }) {
         </div>
 
         <div className="words">
-          <p>{name}</p>
+          <Link to={`/CountryDetail/${name}`}>
+            {" "}
+            <p>{name}</p>{" "}
+          </Link>
           <p>{population}</p>
           <p>{region}</p>
           <p>{capital}</p>
-          {/* calling the props */}
         </div>
       </div>
     </>

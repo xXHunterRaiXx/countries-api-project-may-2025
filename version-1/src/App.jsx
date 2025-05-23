@@ -44,7 +44,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home data={data} />} />
         <Route path="/SavedCountries" element={<SavedCountries />} />
-        <Route path="/CountryDetail" element={<CountryDetail />} />
+        <Route
+          path="/CountryDetail/:countryName"
+          element={<CountryDetail data={data} />}
+        />
       </Routes>
     </div>
     // routes that let the linked area know whatere to go

@@ -23,7 +23,7 @@ function SavedCountries() {
 
   return (
     <>
-      <form onSubmit={getSelected}>
+      <form id="form" onSubmit={getSelected}>
         <h1>My Profile</h1>
         <div id="name">
           <br />
