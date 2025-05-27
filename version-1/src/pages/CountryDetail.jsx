@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 
 function CountryDetail({ data }) {
+  //countryDetail is a comment with the prop of data
   console.log(data);
   const countryName = useParams().countryName;
   //Returns an object in the data. data comes from the  <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
