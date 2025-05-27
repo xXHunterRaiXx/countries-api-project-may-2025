@@ -4,7 +4,7 @@ function CountryDetail({ data }) {
   //countryDetail is a comment with the prop of data
   console.log(data);
   const countryName = useParams().countryName;
-  //Returns an object in the data. data comes from the  <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
+  //Returns an object in the country name from the url <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
 
   let found = data.find((item) => {
     if (countryName === item.name.common) return true;
@@ -19,14 +19,12 @@ function CountryDetail({ data }) {
   return (
     <>
       <div>
-        <nav>
-          <img src={found.flags.png} />
-          <p>{found.name.common}</p>
-          <p>{found.population}</p>
-          <p>{found.region}</p>
-          <p>{found.capital}</p>
-          {/* img is image and p is paragraph. we put {} so we can grab what we need and used dot bracket notation to look for found and the data we need for ex we need the country flag so we used inside {} the dot bracket notation found.flag.png */}
-        </nav>
+        <img src={found.flags.png} />
+        <p>{found.name.common}</p>
+        <p>{found.population}</p>
+        <p>{found.region}</p>
+        <p>{found.capital}</p>
+        {/* img is image and p is paragraph. we put {} so we can grab what we need and used dot notation to look for found and the data we need for ex we need the country flag so we used inside {} the dot notation found.flag.png */}
       </div>
     </>
   );
