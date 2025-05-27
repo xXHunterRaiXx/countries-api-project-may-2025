@@ -6,6 +6,8 @@ import SavedCountries from "./pages/SavedCountries";
 import CountryDetail from "./pages/CountryDetail";
 
 function App() {
+  const [data, setData] = useState();
+
   return (
     <div>
       <nav>
