@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #a8a9ac;
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.flag-img {
+  max-width: 100%;
+}
+#form {
+  text-align: center;
+}
+
+@media (max-width: 825px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 446px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
