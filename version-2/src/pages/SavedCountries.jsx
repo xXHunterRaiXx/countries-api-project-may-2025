@@ -8,6 +8,22 @@ function SavedCountries() {
     bio: "",
   });
 
+  const profileInfo = {
+    countries: "",
+    name: "",
+    email: "",
+    bio: "",
+  };
+
+  localStorage.setItem("profileInfo", profileInfo);
+  console.log(localStorage);
+
+  let info_serialized = JSON.stringify(profileInfo);
+  console.log(info_serialized);
+
+  localStorage.setItem("fprofileInfo, info_serialized");
+  console.log(localStorage);
+
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
