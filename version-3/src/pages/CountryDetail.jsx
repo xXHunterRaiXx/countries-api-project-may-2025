@@ -1,10 +1,34 @@
 import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function CountryDetail({ data }) {
+  const [updateCouunt, setUpdateCount] = useState();
   //countryDetail is a comment with the prop of data
   console.log(data);
   const countryName = useParams().countryName;
   //Returns an object in the country name from the url <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
+
+  const updateCount = () => {
+    const response = fetch("/api/update-one-country-count", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        country_name: countryName,
+      }),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log();
+        setUpdateCount();
+      })
+      .catch((error) => console.error("Error: 404", error));
+  };
+
+  useEffect(() => {
+    updateCount;
+  }, []);
 
   let found = data.find((item) => {
     if (countryName === item.name.common) return true;
@@ -19,11 +43,18 @@ function CountryDetail({ data }) {
   return (
     <>
       <div>
-        <img src={found.flags.png} />
-        <p>{found.name.common}</p>
-        <p>{found.population}</p>
-        <p>{found.region}</p>
-        <p>{found.capital}</p>
+        <nav>
+          <button>BACK</button>
+        </nav>
+        <div>
+          <img src={found.flags.png} />
+          <p>{found.name.common}</p>
+          <button>save</button>
+          <p>POPULATION: {found.population}</p>
+          <p>REGION: {found.region}</p>
+          <p>CAPITAL: {found.capital}</p>
+          <p>VEIWED:</p>
+        </div>
         {/* img is image and p is paragraph. we put {} so we can grab what we need and used dot notation to look for found and the data we need for ex we need the country flag so we used inside {} the dot notation found.flag.png */}
       </div>
     </>

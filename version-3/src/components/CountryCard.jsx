@@ -1,7 +1,33 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function CountryCard({ name, flag, population, region, capital }) {
+  const [oneCount, setOneCount] = useState();
   //name, flag, population, region, and capital are props//
+  // useState
+
+  const saveOneCouun = () => {
+    const response = fetch("/api/save-one-country", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        country_name: countryName,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("this is the data", data);
+        setOneCount(data);
+      })
+      .catch((error) => console.error("Error: 404", error));
+  };
+
+  useEffect(() => {
+    saveOneCouun;
+  }, []);
+
   return (
     <>
       <div className="card">

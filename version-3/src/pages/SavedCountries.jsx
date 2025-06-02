@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function SavedCountries() {
   const [formData, setFormData] = useState({
@@ -7,6 +7,11 @@ function SavedCountries() {
     email: "",
     bio: "",
   });
+
+  const [newUsaer, setNewUser] = useState();
+  const [allUserData, setallUserData] = useState();
+  const [allSavedData, setAllSavedData] = useState();
+  const [addUser, setAddUser] = useState();
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -19,7 +24,67 @@ function SavedCountries() {
     callMyApi(formData.countries);
     setFormData({ countries: "", name: "", email: "", bio: "" });
   }
-  // this lets me click on the form//
+
+  const newUser = () => {
+    const response = fetch("/api/get-newest-user", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log();
+        setNewUser();
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  const allUser = () => {
+    const response = fetch("/api/get-all-users", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log();
+        setallUserData();
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  const allSaved = () => {
+    const response = fetch("/api/get-all-saved-countries", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log();
+        setAllSavedData();
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  const addOneUser = () => {
+    const response = fetch("/api/add-one-user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        country_name: countryName,
+      }),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log();
+        setAddUser();
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  useEffect(() => {
+    newUser;
+    allUser;
+    allSaved;
+    addOneUser;
+  }, []);
 
   return (
     <>
