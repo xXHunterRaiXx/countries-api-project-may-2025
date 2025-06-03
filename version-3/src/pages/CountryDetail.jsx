@@ -21,7 +21,7 @@ function CountryDetail({ data }) {
       .then((response) => response.json())
       .then((data) => {
         console.log("viewed:", data);
-        // setCount(data.Count);
+        // setCount(data.count);
       })
       .catch((error) => console.error("Error: 404", error));
   };
