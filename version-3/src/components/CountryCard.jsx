@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 function CountryCard({ name, flag, population, region, capital }) {
-  const [oneCount, setOneCount] = useState();
   //name, flag, population, region, and capital are props//
   // useState
 
@@ -19,9 +18,8 @@ function CountryCard({ name, flag, population, region, capital }) {
       .then((response) => response.json())
       .then((data) => {
         console.log("this is the data", data);
-        setOneCount(data);
       })
-      .catch((error) => console.error("Error: 404", error));
+      .catch((error) => console.error("Error:", error));
   };
 
   useEffect(() => {
