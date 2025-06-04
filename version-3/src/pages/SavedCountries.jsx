@@ -33,6 +33,7 @@ function SavedCountries() {
       .then((data) => {
         console.log("this is the new user:", data);
         setNewUserData(data);
+        // console.log(data[0].name);
       })
       .catch((error) => console.error("Error: Can't Count", error));
   };
@@ -44,7 +45,7 @@ function SavedCountries() {
   //     .then((response) => response.json())
   //     .then((data) => {
   //       console.log("these are all the users:", data);
-  //       setallUserData();
+  //       setallUserData(data.name);
   //     })
   //     .catch((error) => console.error("Error: Can't Count", error));
   // };
@@ -56,66 +57,47 @@ function SavedCountries() {
   //     .then((response) => response.json())
   //     .then((data) => {
   //       console.log("this is the saved countries:", data);
-  //       setAllSavedData();
+  //       setAllSavedData(data);
   //     })
   //     .catch((error) => console.error("Error: Can't Count", error));
   // };
 
-  //   const addOneUser = () => {
-  //     const response = fetch("/api/add-one-user", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         {
-  //     countries:{countries},
-  //     name: {name},
-  //     email: {email},
-  //     bio: {bio},
-  // }
-  //       }),
+  // const addOneUser = () => {
+  //   const response = fetch("/api/add-one-user", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       countries: { countries },
+  //       name: { name },
+  //       email: { email },
+  //       bio: { bio },
+  //     }),
+  //   })
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       console.log("new user added:", data);
+  //       setAddUser();
   //     })
-  //       .then((response) => response.json())
-  //       .then((data) => {
-  //         console.log("new user added:", data);
-  //         setAddUser();
-  //       })
-  //       .catch((error) => console.error("Error: Can't Count", error));
-  //   };
+  //     .catch((error) => console.error("Error: Can't Count", error));
+  // };
+
   useEffect(() => {
     newUser();
-    // if{
-
-    // }
-    // else {
-
-    // }
   }, []);
 
-  useEffect(() => {
-    // allUser();
-    // if{
-    // }
-    // else {
-    // }
-  }, []);
+  // useEffect(() => {
+  //   allUser();
+  // }, []);
 
-  useEffect(() => {
-    // allSaved();
-    // if{
-    // }
-    // else {
-    // }
-  }, []);
+  // useEffect(() => {
+  //   allSaved();
+  // }, []);
 
-  useEffect(() => {
-    // addOneUser();
-    // if{
-    // }
-    // else {
-    // }
-  }, []);
+  // useEffect(() => {
+  //   addOneUser();
+  // }, []);
 
   return (
     <>
@@ -177,6 +159,9 @@ function SavedCountries() {
           </div>
         </form>
         {/* start of the form 100% not done */}
+
+        <p>Newest User: {newUserData}</p>
+        {/* <p> All Users: {allUserData}</p> */}
       </div>
     </>
   );

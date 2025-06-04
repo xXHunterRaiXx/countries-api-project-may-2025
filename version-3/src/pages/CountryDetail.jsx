@@ -21,27 +21,26 @@ function CountryDetail({ data }) {
       .then((response) => response.json())
       .then((data) => {
         console.log("viewed:", data);
-        // setCount(data.count);
+        setCount(data.newCount);
       })
       .catch((error) => console.error("Error: 404", error));
   };
 
   useEffect(() => {
-    if (countries) {
+    if (count === 0) {
       updateCount();
     }
-    // else {
-    // }
   }, []);
+
+  let found;
   if (data) {
-    let found = data.find((item) => {
+    found = data.find((item) => {
       if (countryName === item.name.common) return true;
     });
     // found is the varible where we assign data.find to. data.find helps us look for the data and puts it in the system so we are able to use it in the card detail.
-
-    if (!found) {
-      return console.log("Country not Found");
-    }
+  }
+  if (!found) {
+    return console.log("Country not Found");
   }
   // this was for if found (the varible) was not found the console will show up saying it wasnt found
 
@@ -59,7 +58,7 @@ function CountryDetail({ data }) {
             <p>POPULATION: {found.population}</p>
             <p>REGION: {found.region}</p>
             <p>CAPITAL: {found.capital}</p>
-            <p>VEIWED:</p>
+            <p>VEIWED: {count}</p>
           </div>
         )}
         {/* img is image and p is paragraph. we put {} so we can grab what we need and used dot notation to look for found and the data we need for ex we need the country flag so we used inside {} the dot notation found.flag.png */}
