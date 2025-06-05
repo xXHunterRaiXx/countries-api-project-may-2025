@@ -18,10 +18,10 @@ function SavedCountries() {
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   }
 
-  function getSelected(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
-    callMyApi(formData.countries);
+    addOneUser(data);
     setFormData({ countries: "", name: "", email: "", bio: "" });
   }
 
@@ -94,14 +94,10 @@ function SavedCountries() {
   //   allSaved();
   // }, []);
 
-  useEffect(() => {
-    addOneUser();
-  }, []);
-
   return (
     <>
       <div>
-        <form id="form" onSubmit={getSelected}>
+        <form id="form" onSubmit={handleSubmit}>
           <h1>My Profile</h1>
           <div id="name">
             <br />
@@ -159,7 +155,7 @@ function SavedCountries() {
         </form>
         {/* start of the form 100% not done */}
 
-        <p>Newest User: {newUserData}</p>
+        <p>Welcome {newUserData}</p>
       </div>
     </>
   );

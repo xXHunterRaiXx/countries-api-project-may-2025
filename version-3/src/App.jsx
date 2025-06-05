@@ -11,7 +11,9 @@ function App() {
   //data is a varible for the usestate/ data will end up holding the data thats in the api after call the api/
 
   function callMyApi() {
-    fetch(`https://restcountries.com/v3.1/all`)
+    fetch(
+      `https://restcountries.com/v3.1/all?fields=name,flags,capital,population,region`
+    )
       .then((response) => response.json())
       .then((data) => {
         setData(data);
