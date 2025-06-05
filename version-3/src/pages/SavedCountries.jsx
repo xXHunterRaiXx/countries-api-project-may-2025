@@ -7,11 +7,11 @@ function SavedCountries() {
     email: "",
     bio: "",
   });
+  console.log(formData);
 
   const [newUserData, setNewUserData] = useState(null);
   const [allUserData, setallUserData] = useState(null);
   const [allSavedData, setAllSavedData] = useState(null);
-  const [addUser, setAddUser] = useState(null);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -21,7 +21,7 @@ function SavedCountries() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
-    addOneUser(data);
+    addOneUser();
     setFormData({ countries: "", name: "", email: "", bio: "" });
   }
 
@@ -68,16 +68,14 @@ function SavedCountries() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        countries: { countries },
-        name: { name },
-        email: { email },
-        bio: { bio },
+        name: formData.name,
+        country_name: formData.countries,
+        email: formData.email,
+        bio: formData.bio,
       }),
     })
-      .then((response) => response.json())
       .then((data) => {
         console.log("new user added:", data);
-        setAddUser();
       })
       .catch((error) => console.error("Error: Can't Count", error));
   };
