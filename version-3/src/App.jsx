@@ -17,7 +17,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        console.log(data);
+        // console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }
@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     callMyApi();
-    console.log(data, "APP DATA ");
+    // console.log(data, "APP DATA ");
   }, []);
 
   // uses useeffect to call and render my api this will run once page loads//

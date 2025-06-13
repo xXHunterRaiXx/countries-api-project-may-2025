@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 function CountryDetail({ data }) {
   const [count, setCount] = useState(0);
   //countryDetail is a comment with the prop of data
-  console.log(data);
+  // console.log(data);
+
+  const [savedCountry, setSavedCountry] = useState(null);
   const countryName = useParams().countryName;
   //Returns an object in the country name from the url <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
 
@@ -41,6 +43,29 @@ function CountryDetail({ data }) {
     // the useeffect calls the function of updateCount witch was made on line 11
   }, []);
 
+  const saveOneCountry = () => {
+    const response = fetch("/api/save-one-country", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        country_name: countryName,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("saved", data);
+        // setSavedCountry(data.);
+      })
+      .catch((error) => console.error("Error:", error));
+    console.log("Post is running", response);
+  };
+
+  useEffect(() => {
+    saveOneCountry();
+  }, []);
+
   let found;
   if (data) {
     found = data.find((item) => {
@@ -63,7 +88,7 @@ function CountryDetail({ data }) {
           <div>
             <img src={found.flags.png} />
             <p>{found.name.common}</p>
-            <button>save</button>
+            <button> save </button>
             <p>POPULATION: {found.population}</p>
             <p>REGION: {found.region}</p>
             <p>CAPITAL: {found.capital}</p>

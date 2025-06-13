@@ -10,8 +10,8 @@ function SavedCountries() {
   console.log(formData);
 
   const [newUserData, setNewUserData] = useState(null);
-  const [allUserData, setallUserData] = useState(null);
-  const [allSavedData, setAllSavedData] = useState(null);
+  // const [allUserData, setallUserData] = useState(null);
+  // const [allSavedData, setAllSavedData] = useState(null);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -49,17 +49,16 @@ function SavedCountries() {
       .catch((error) => console.error("Error: Can't Count", error));
   };
 
-  // const allSaved = () => {
-  //   const response = fetch("/api/get-all-saved-countries", {
-  //     method: "GET",
-  //   })
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log("this is the saved countries:", data);
-  //       // setAllSavedData(data);
-  //     })
-  //     .catch((error) => console.error("Error: Can't Count", error));
-  // };
+  const allSaved = () => {
+    const response = fetch("/api/get-all-saved-countries", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("this is the saved countries:", data);
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
 
   const addOneUser = () => {
     const response = fetch("/api/add-one-user", {
@@ -84,13 +83,13 @@ function SavedCountries() {
     newUser();
   }, []);
 
-  // useEffect(() => {
-  //   allUser();
-  // }, []);
+  useEffect(() => {
+    allUser();
+  }, []);
 
-  // useEffect(() => {
-  //   allSaved();
-  // }, []);
+  useEffect(() => {
+    allSaved();
+  }, []);
 
   return (
     <>
