@@ -5,8 +5,6 @@ function CountryDetail({ data }) {
   const [count, setCount] = useState(0);
   //countryDetail is a comment with the prop of data
   // console.log(data);
-
-  const [savedCountry, setSavedCountry] = useState(null);
   const countryName = useParams().countryName;
   //Returns an object in the country name from the url <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
 
@@ -53,18 +51,13 @@ function CountryDetail({ data }) {
         country_name: countryName,
       }),
     })
-      .then((response) => response.json())
+      .then((response) => response.text())
       .then((data) => {
         console.log("saved", data);
-        // setSavedCountry(data.);
       })
       .catch((error) => console.error("Error:", error));
     console.log("Post is running", response);
   };
-
-  useEffect(() => {
-    saveOneCountry();
-  }, []);
 
   let found;
   if (data) {
@@ -88,7 +81,7 @@ function CountryDetail({ data }) {
           <div>
             <img src={found.flags.png} />
             <p>{found.name.common}</p>
-            <button> save </button>
+            <button onClick={saveOneCountry}> save </button>
             <p>POPULATION: {found.population}</p>
             <p>REGION: {found.region}</p>
             <p>CAPITAL: {found.capital}</p>
