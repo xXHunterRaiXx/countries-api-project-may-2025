@@ -8,10 +8,9 @@ function SavedCountries() {
     bio: "",
   });
   console.log(formData);
-
   const [newUserData, setNewUserData] = useState(null);
   // const [allUserData, setallUserData] = useState(null);
-  // const [allSavedData, setAllSavedData] = useState(null);
+  const [allSavedCountData, setAllSavedCountData] = useState([]);
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -55,7 +54,8 @@ function SavedCountries() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("this is the saved countries:", data);
+        console.log("save:", data);
+        setAllSavedCountData(data);
       })
       .catch((error) => console.error("Error: Can't Count", error));
   };
@@ -153,6 +153,10 @@ function SavedCountries() {
         {/* start of the form 100% not done */}
 
         <p>Welcome {newUserData}</p>
+
+        {allSavedCountData.map((item, key) => {
+          <h2>{item.country_name}</h2>;
+        })}
       </div>
     </>
   );
