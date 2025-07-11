@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-function SavedCountries() {
+function SavedCountries({ apiSavedCount }) {
   const [formData, setFormData] = useState({
     countries: "",
     name: "",
     email: "",
     bio: "",
   });
+
   console.log(formData);
   const [newUserData, setNewUserData] = useState(null);
-  // const [allUserData, setallUserData] = useState(null);
   const [allSavedCountData, setAllSavedCountData] = useState([]);
 
   function handleChange(event) {
@@ -55,6 +55,13 @@ function SavedCountries() {
       .then((response) => response.json())
       .then((data) => {
         console.log("save:", data);
+        console.log("this is the saved data", apiSavedCount);
+
+        // I would do the filtering in your allSaved() function right before you setAllSavedCountData().
+        // You can use "data" to filter the big data object from your API call.
+        // You may have to pass the data from the API call into SavedCountries.jsx as a prop. Then you will be able to work with it.
+        // You will be able to make an array of objects. They will have all the stuff that the individual countries have in the big ole data object from the API call
+
         setAllSavedCountData(data);
       })
       .catch((error) => console.error("Error: Can't Count", error));
@@ -155,7 +162,7 @@ function SavedCountries() {
         <p>Welcome {newUserData}</p>
 
         {allSavedCountData.map((item, key) => {
-          return <h3>{item.country_name}</h3>;
+          return <h3 key={key}>{item.country_name}</h3>;
         })}
       </div>
     </>
