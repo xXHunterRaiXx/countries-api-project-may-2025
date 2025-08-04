@@ -28,18 +28,18 @@ app.listen(port, () => {
 // Helper Functions
 // ---------------------------------
 
-async function getAllSavedCoun() {
-  const result = await db.query("SELECT saved_countries FROM countries");
+async function getAllSavedCount() {
+  const result = await db.query("SELECT * FROM saved_countries");
   console.log(result);
   return result.rows;
 }
 
-async function getOneSavedCount(countriesName) {
+async function savedOneCountry(countriesName) {
   const result = await db.query(
-    "SELECT saved_countries FROM countries WHERE name = $1",
-    [countriesName]
+    "INSERT INTO saved_countries (country_name) VALUES ($1) ON CONFLICT (country_name) DO NOTHING",
+    [countriesName.country_name]
   );
-  return result.rows[0];
+  return result.rows;
 }
 
 async function getAllUsers() {
@@ -65,9 +65,10 @@ async function addOneUsers(user) {
   return result.rows;
 }
 
-async function updateCounCount() {
+async function updateCounCount(updatedCountryCounts) {
   const result = await db.query(
-    "(UPDATE country_counts SET count = count + 1 WHERE country_name = $1)"
+    "INSERT INTO country_counts (country_name, count) VALUES ($1, 1) ON CONFLICT (country_name) DO UPDATE SET count = country_counts.count + 1 RETURNING count AS newCount",
+    [updatedCountryCounts.country_name]
   );
   console.log(result);
   return result.rows;
@@ -78,14 +79,14 @@ async function updateCounCount() {
 // ---------------------------------
 
 app.get("/get-all-saved-countries", async (req, res) => {
-  const allSaved = await getAllSavedCoun();
+  const allSaved = await getAllSavedCount();
   res.json(allSaved);
 });
 
-app.post("/save-one-country/:name", async (req, res) => {
-  const countriesName = req.params.name;
-  const countries = await getOneSavedCount(countriesName);
-  res.json(countries);
+app.post("/save-one-country", async (req, res) => {
+  const countriesName = req.body;
+  await savedOneCountry(countriesName);
+  res.send("Success! The country is saved.");
 });
 
 app.get("/get-all-users", async (req, res) => {
@@ -105,15 +106,7 @@ app.post("/add-one-user", async (req, res) => {
 });
 
 app.post("/update-one-country-count", async (req, res) => {
-  const updateCount = req.params.name;
-  const user = await updateCounCount(updateCount);
-  res.send("count has been updated");
-  res.json(user);
+  const updateCount = req.body;
+  const updateTheCount = await updateCounCount(updateCount);
+  res.json(updateTheCount);
 });
-
-// /get-newest-user
-// /get-all-users
-// POST	/add-one-user
-// POST	/update-one-country-count
-// 	/get-all-saved-countries
-// POST	/save-one-country
