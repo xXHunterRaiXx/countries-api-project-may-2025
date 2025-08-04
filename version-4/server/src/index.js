@@ -67,11 +67,11 @@ async function addOneUsers(user) {
 
 async function updateCounCount(updatedCountryCounts) {
   const result = await db.query(
-    "INSERT INTO country_counts (country_name, count) VALUES ($1, 1) ON CONFLICT (country_name) DO UPDATE SET count = country_counts.count + 1 RETURNING count AS newCount",
+    'INSERT INTO country_counts (country_name, count) VALUES ($1, 1) ON CONFLICT (country_name) DO UPDATE SET count = country_counts.count + 1 RETURNING count AS "newCount"',
     [updatedCountryCounts.country_name]
   );
   console.log(result);
-  return result.rows;
+  return result.rows[0];
 }
 
 // ---------------------------------
