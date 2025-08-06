@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import CountryCard from "../components/CountryCard";
 
 function SavedCountries({ apiSavedCount }) {
   const [formData, setFormData] = useState({
@@ -62,7 +63,6 @@ function SavedCountries({ apiSavedCount }) {
         let filteredArray = apiSavedCount.filter((item) =>
           namesOfCountry.has(item.name.common)
         );
-
         console.log("this is the filtered array:", filteredArray);
         // I would do the filtering in your allSaved() function right before you setAllSavedCountData().
         // You can use "data" to filter the big data object from your API call.
@@ -102,8 +102,10 @@ function SavedCountries({ apiSavedCount }) {
   }, []);
 
   useEffect(() => {
-    allSaved();
-  }, []);
+    if (apiSavedCount) {
+      allSaved();
+    }
+  }, [apiSavedCount]);
 
   return (
     <>
@@ -167,10 +169,21 @@ function SavedCountries({ apiSavedCount }) {
         {/* start of the form 100% not done */}
 
         <p>Welcome {newUserData}</p>
-
-        {allSavedCountData.map((item, key) => {
-          return <h3 key={key}>{item.country_name}</h3>;
-        })}
+        <div>
+          <p>THESE ARE THE SAVED COUNTRYS</p>
+          {allSavedCountData.map((item, index) => {
+            return (
+              <CountryCard
+                flag={item.flags.png}
+                name={item.name.common}
+                population={item.population}
+                region={item.region}
+                capital={item.capital}
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );
