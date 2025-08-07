@@ -9,8 +9,8 @@ import config from "./config.js"; // we need access to our database connection c
 
 // connect to our PostgreSQL database, or db for short
 const db = new pg.Pool({
-  connectionString: config.databaseUrl, // credentials to access the database — keep this private!
-  ssl: true, // we will use SSL encryption when connecting to the database
+  connectionString: process.env.DATABASE_URL,
+  ssl: true, // use SSL encryption when connecting to the database
 });
 
 const app = express(); // Creating an instance of the express module
