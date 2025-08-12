@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import CountryCard from "../components/CountryCard";
 
-function SavedCountries() {
+function SavedCountries({ apiSavedCount }) {
   const [formData, setFormData] = useState({
     countries: "",
     name: "",
@@ -8,96 +9,182 @@ function SavedCountries() {
     bio: "",
   });
 
-  const profileInfo = {
-    countries: "",
-    name: "",
-    email: "",
-    bio: "",
-  };
-
-  localStorage.setItem("profileInfo", profileInfo);
-  console.log(localStorage);
-
-  let info_serialized = JSON.stringify(profileInfo);
-  console.log(info_serialized);
-
-  localStorage.setItem("fprofileInfo, info_serialized");
-  console.log(localStorage);
+  console.log(formData);
+  const [newUserData, setNewUserData] = useState(null);
+  const [allSavedCountData, setAllSavedCountData] = useState([]);
 
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   }
 
-  function getSelected(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     console.log(formData);
-    callMyApi(formData.countries);
+    addOneUser();
     setFormData({ countries: "", name: "", email: "", bio: "" });
   }
-  // this lets me click on the form//
+
+  const newUser = () => {};
+
+  const allUser = () => {
+    const response = fetch("/api/get-all-users", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("these are all the users:", data);
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  const allSaved = () => {
+    const response = fetch("/api/get-all-saved-countries", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("save:", data);
+        console.log("this is the saved data", apiSavedCount);
+
+        let namesOfCountry = new Set(data.map((item) => item.country_name));
+
+        let filteredArray = apiSavedCount.filter((item) =>
+          namesOfCountry.has(item.name.common)
+        );
+        console.log("this is the filtered array:", filteredArray);
+        // I would do the filtering in your allSaved() function right before you setAllSavedCountData().
+        // You can use "data" to filter the big data object from your API call.
+        // You may have to pass the data from the API call into SavedCountries.jsx as a prop. Then you will be able to work with it.
+        // You will be able to make an array of objects. They will have all the stuff that the individual countries have in the big ole data object from the API call
+
+        setAllSavedCountData(filteredArray);
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  const addOneUser = () => {
+    const response = fetch("/api/add-one-user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        country_name: formData.countries,
+        email: formData.email,
+        bio: formData.bio,
+      }),
+    })
+      .then((data) => {
+        console.log("new user added:", data);
+      })
+      .catch((error) => console.error("Error: Can't Count", error));
+  };
+
+  useEffect(() => {
+    newUser();
+  }, []);
+
+  useEffect(() => {
+    allUser();
+  }, []);
+
+  useEffect(() => {
+    if (apiSavedCount) {
+      allSaved();
+    }
+  }, [apiSavedCount]);
 
   return (
     <>
-      <form id="form" onSubmit={getSelected}>
-        <h1>My Profile</h1>
-        <div id="name">
-          <br />
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
+      <div>
+        <form id="form" onSubmit={handleSubmit}>
+          <h1>My Profile</h1>
+          <div id="name">
+            <br />
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div id="email">
-          <br />
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
+          <div id="email">
+            <br />
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div id="countries">
-          <br />
-          <label htmlFor="countries">Country</label>
-          <input
-            type="text"
-            name="countries"
-            id="countries"
-            value={formData.countries}
-            onChange={handleChange}
-          />
-        </div>
+          <div id="countries">
+            <br />
+            <label htmlFor="countries">Country</label>
+            <input
+              type="text"
+              name="countries"
+              id="countries"
+              value={formData.countries}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div id="bio">
-          <br />
-          <label htmlFor="bio">Bio</label>
-          <input
-            type="text"
-            name="bio"
-            id="bio"
-            value={formData.bio}
-            onChange={handleChange}
-          />
-        </div>
+          <div id="bio">
+            <br />
+            <label htmlFor="bio">Bio</label>
+            <input
+              type="text"
+              name="bio"
+              id="bio"
+              value={formData.bio}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div id="button">
-          <button id="submit" type="submit">
-            Submit
-          </button>
+          <div id="button">
+            <button id="submit" type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+        {/* start of the form 100% not done */}
+
+        <p>Welcome {newUserData}</p>
+        <div>
+          <p>THESE ARE THE SAVED COUNTRYS</p>
+          {allSavedCountData.map((item, index) => {
+            return (
+              <CountryCard
+                flag={item.flags.png}
+                name={item.name.common}
+                population={item.population}
+                region={item.region}
+                capital={item.capital}
+                key={index}
+              />
+            );
+          })}
         </div>
-      </form>
-      {/* start of the form 100% not done */}
+      </div>
     </>
   );
 }
 
 export default SavedCountries;
+
+// localStorage.setItem("profileInfo", profileInfo);
+// console.log(localStorage);
+
+// let info_serialized = JSON.stringify(profileInfo);
+// console.log(info_serialized);
+
+// localStorage.setItem("fprofileInfo, info_serialized");
+// console.log(localStorage);

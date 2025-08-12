@@ -11,11 +11,13 @@ function App() {
   //data is a varible for the usestate/ data will end up holding the data thats in the api after call the api/
 
   function callMyApi() {
-    fetch(`https://restcountries.com/v3.1/all`)
+    fetch(
+      `https://restcountries.com/v3.1/all?fields=name,flags,capital,population,region`
+    )
       .then((response) => response.json())
       .then((data) => {
         setData(data);
-        console.log(data);
+        // console.log(data);
       })
       .catch((error) => console.error("Error:", error));
   }
@@ -24,7 +26,7 @@ function App() {
 
   useEffect(() => {
     callMyApi();
-    console.log(data, "APP DATA ");
+    // console.log(data, "APP DATA ");
   }, []);
 
   // uses useeffect to call and render my api this will run once page loads//
@@ -45,7 +47,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home data={data} />} />
-        <Route path="/SavedCountries" element={<SavedCountries />} />
+        <Route
+          path="/SavedCountries"
+          element={<SavedCountries apiSavedCount={data} />}
+        />
         <Route
           path="/CountryDetail/:countryName"
           element={<CountryDetail data={data} />}
