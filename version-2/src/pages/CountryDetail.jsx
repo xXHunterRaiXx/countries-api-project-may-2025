@@ -3,14 +3,17 @@ import { useState, useEffect } from "react";
 
 function CountryDetail({ data }) {
   const [count, setCount] = useState(0);
+  const { savedCountries, setSavedCountries } = useState();
   //countryDetail is a comment with the prop of data
   // console.log(data);
   const countryName = useParams().countryName;
   //Returns an object in the country name from the url <Route  path="/CountryDetail/:countryName" element={<CountryDetail data={data} />}/></Routes> in the app.jsx
 
   const updateCount = () => {
-    let newCount = JSON.parse(localStorage.getItem(`${countryName}Count` || 0));
-    let plusOneCount = newCount + 1;
+    const newCount = JSON.parse(
+      localStorage.getItem(`${countryName}Count` || 0)
+    );
+    const plusOneCount = newCount + 1;
     setCount(plusOneCount);
     localStorage.setItem(`${countryName}Count`, JSON.stringify(plusOneCount));
   };
@@ -18,7 +21,26 @@ function CountryDetail({ data }) {
     updateCount();
   }, []);
 
-  const saveOneCountry = () => {};
+  const saveOneCountry = async () => {
+    //retrivving the exsiting saved countries if the exsiting country isnt found it turns back into an epty array
+    const existingSaved =
+      (await JSON.parse(localStorage.getItem("savedCountries"))) || [];
+    //The logical OR ( || ) (logical disjunction) operator for a set of operands is true if and only if one or more of its operands is true. It is typically used with boolean (logical) values.
+    //need to make it where only one of the saved country shows not multiple in an array
+
+    //this code lets us see if the country is already saved if it does we do not run the following code
+    const alreadySavedYet = existingSaved.some(
+      (item) => item.country_name === countryName
+    );
+    // this code is a if else statement telling you if it already saved say error if not it goes to else and pushes the country to the exsiting saved array
+    if (alreadySavedYet) {
+      console.log("error");
+    } else {
+      existingSaved.push({ country_name: countryName });
+    }
+    localStorage.setItem("savedCountries", JSON.stringify(existingSaved));
+    console.log(`${countryName} is successfully saved.`);
+  };
 
   let found;
   if (data) {
