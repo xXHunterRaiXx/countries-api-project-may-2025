@@ -64,6 +64,7 @@ function SavedCountries({ apiSavedCount }) {
           namesOfCountry.has(item.name.common)
         );
         console.log("this is the filtered array:", filteredArray);
+        
         // I would do the filtering in your allSaved() function right before you setAllSavedCountData().
         // You can use "data" to filter the big data object from your API call.
         // You may have to pass the data from the API call into SavedCountries.jsx as a prop. Then you will be able to work with it.

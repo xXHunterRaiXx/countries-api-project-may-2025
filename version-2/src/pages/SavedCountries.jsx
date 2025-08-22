@@ -64,37 +64,19 @@ function SavedCountries({ apiSavedCount }) {
   };
 
   const addOneUser = () => {
-    const response = fetch("/api/add-one-user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        country_name: formData.countries,
-        email: formData.email,
-        bio: formData.bio,
-      }),
-    })
-      .then((data) => {
-        console.log("new user added:", data);
-      })
-      .catch((error) => console.error("Error: Can't Count", error));
+    localStorage.setItem("profile", JSON.stringify(dataObj));
+    setFormData({ name: "", email: "", country: "" });
   };
-
   useEffect(() => {
-    newUser();
-  }, []);
-
-  useEffect(() => {
-    allUser();
-  }, []);
-
-  useEffect(() => {
-    if (apiSavedCount) {
-      allSaved();
+    if (localStorage.getItem("user_profile")) {
+      let userInfomation = JSON.parse(localStorage.getItem("users_profile"));
+      setUser(userInfomation.name);
     }
-  }, [apiSavedCount]);
+    const savedCountriesOfUser = JSON.parse(
+      localStorage.getItem("userSavedCountriesOfUser")
+    );
+    setSavedCountries(savedCountriesOfUser);
+  }, []);
 
   return (
     <>
