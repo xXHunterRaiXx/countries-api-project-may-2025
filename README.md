@@ -20,9 +20,7 @@ This project was an assement from annie cannons. It purpose was to grab the coun
 
 <img width="1301" height="899" alt="Screenshot 2025-08-22 at 12 06 58 PM" src="https://github.com/user-attachments/assets/a566921a-2784-4dcd-8fdd-9034fa0d7ad7" />
 
-
 <img width="659" height="666" alt="Screenshot 2025-08-22 at 12 07 18 PM" src="https://github.com/user-attachments/assets/146f086d-167a-40c1-9961-03946fd13901" />
-
 
 ## ✨ Features
 
@@ -54,14 +52,14 @@ List the tools and technologies you used to build the frontend, backend and data
 **Frontend**
 
 - **Languages:**
-  CSS
-  JAVASCRIPT
+  CSS,
+  JAVASCRIPT &
   HTML
 - **Framework:**
   REACT
 
 - **Deployment:**
-  NETIFY
+  NETIFY &
   RENDER
 
 **Server/API**
@@ -69,10 +67,10 @@ List the tools and technologies you used to build the frontend, backend and data
 - **Languages:**
   SQL
 - **Framework:**
-  await
+  await &
   asyn
 - **Deployment:**
-  NEON
+  NEON &
   FIDDLE
 
 **Database**
