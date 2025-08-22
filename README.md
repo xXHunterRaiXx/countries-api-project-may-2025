@@ -18,9 +18,11 @@ This project was an assement from annie cannons. It purpose was to grab the coun
 
 ## 🖼️ Screenshots
 
-Copy & paste 1–2 images of your project here to show it off!
+<img width="1301" height="899" alt="Screenshot 2025-08-22 at 12 06 58 PM" src="https://github.com/user-attachments/assets/a566921a-2784-4dcd-8fdd-9034fa0d7ad7" />
 
-To take a screenshot of a specific portion of the screen, press and hold `Command + Control + Shift + 4`, then drag the crosshair cursor to select the area. The screenshot will be automatically copied, so that you can paste it directly into this README.md file.
+
+<img width="659" height="666" alt="Screenshot 2025-08-22 at 12 07 18 PM" src="https://github.com/user-attachments/assets/146f086d-167a-40c1-9961-03946fd13901" />
+
 
 ## ✨ Features
 
