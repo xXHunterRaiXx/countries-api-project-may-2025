@@ -78,7 +78,8 @@ List the tools and technologies you used to build the frontend, backend and data
 - **Languages:**
   SQL
 - **Deployment:**
-  NODE
+  NODE &
+  POSTMAN
 
 ## 💭 Reflections
 
