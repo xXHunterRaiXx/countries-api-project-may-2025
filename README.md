@@ -29,9 +29,23 @@ This project was an assement from annie cannons. It purpose was to grab the coun
 What are the features that you implemented in the app?
 For example:
 
-- Home.jsx
-  CountryDetail.jsx
+- List the pages you built (e.g. Home, About, Dashboard)
+  Home
+  CountryDetails
+  SavedCountries
+
 - Describe what the user can do on each page (e.g. view data, submit a form, search, etc.)
+  SavedCountry:
+  form
+  saved countries are shown
+
+CountryDetail:
+Where one Country is shown
+Where to save the One Country
+
+Home:
+Routs
+Where all the Countries are
 
 ## 🛠️ Tech Stack
 
@@ -40,27 +54,58 @@ List the tools and technologies you used to build the frontend, backend and data
 **Frontend**
 
 - **Languages:**
+  CSS
+  JAVASCRIPT
+  HTML
 - **Framework:**
+  REACT
+
 - **Deployment:**
+  NETIFY
+  RENDER
 
 **Server/API**
 
 - **Languages:**
+  SQL
 - **Framework:**
+  await
+  asyn
 - **Deployment:**
+  NEON
+  FIDDLE
 
 **Database**
 
 - **Languages:**
+  SQL
 - **Deployment:**
+  NODE
 
 ## 💭 Reflections
 
 - What did you learn?
+
+I learned about the found
+i learned about filturing
+i learned how to make api with sql
+
 - What are you proud of?
+
+I am proud to finish tthe project
+
 - What was challenging?
+
+i found it challenging to turn the country card to show one country
+
 - Any future ideas for how you'd continue building the project?
+
+I want to do more with the css
+i want to make the button to go back to previous page aka home page
 
 ## 🙌 Credits
 
 Did anyone or anything help you? Shout out tutorials or teammates.
+ARIANA
+ANNIECANNONS
+PHIL
